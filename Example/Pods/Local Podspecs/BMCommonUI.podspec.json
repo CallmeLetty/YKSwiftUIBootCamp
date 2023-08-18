@@ -1,0 +1,24 @@
+{
+  "name": "BMCommonUI",
+  "version": "0.0.1",
+  "summary": "A short description of BMCommonUI.podspec.",
+  "description": "BMCommonUI components",
+  "homepage": "http://github/BMCommonUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liuyuanyuan": "1085798092@qq.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "git@git.bongmi.cn:bongmi/BMCommonUI.podspec.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "BMCommonUI/Classes/**/*",
+  "requires_arc": true,
+  "resources": "BMCommonUI/Assets/**/*"
+}

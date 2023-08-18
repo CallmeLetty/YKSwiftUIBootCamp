@@ -1,0 +1,6 @@
+framework module BMCommonUI {
+  umbrella header "BMCommonUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
