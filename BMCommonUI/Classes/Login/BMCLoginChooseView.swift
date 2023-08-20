@@ -29,28 +29,28 @@ case task, healthy, organized, time, emotion, impulsivity, learn, notSure
 struct BMCLoginChooseView: View {
   @State var chosenList: [Int] = []
   @State var continueEnable: Bool = false
-  var body: some View {
-      ZStack {
-          BMCLoginBgView()
-          
-          ScrollView {
-              VStack(alignment: .leading) {
-                  Text("What are you hoping to achieve with us?")
-                      .foregroundColor(.white)
-                      .font(.title)
-                      .bold()
-                      .padding(.horizontal,20)
-                  Text("Select up to 3 that apply")
-                      .foregroundColor(.white)
-                      .font(.subheadline)
-                      .padding(.horizontal,20)
-                      .padding(.vertical,10)
-                  
-                  VStack(spacing: 12) {
-                      ForEach(0..<BMTQuestionType.allCases.count,id: \.self) { index in
-                          let type = BMTQuestionType.allCases[index]
-                          
-                          BMCQuestionOption(image: type.image,
+    var body: some View {
+        ZStack {
+            BMCLoginBgView()
+            VStack(alignment: .leading) {
+                Text("What are you hoping to achieve with us?")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .bold()
+                    .padding(.horizontal,20)
+                Text("Select up to 3 that apply")
+                    .foregroundColor(.white)
+                    .font(.subheadline)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,10)
+                
+                ScrollView {
+                    
+                    VStack(spacing: 12) {
+                        ForEach(0..<BMTQuestionType.allCases.count,id: \.self) { index in
+                            let type = BMTQuestionType.allCases[index]
+                            
+                            BMCQuestionOption(image: type.image,
                                             question: type.text,
                                             index: index, completion: { chosen in
                               if chosen {
