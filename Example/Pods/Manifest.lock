@@ -2,15 +2,15 @@ PODS:
   - BMCommonUI (0.0.1)
 
 DEPENDENCIES:
-  - BMCommonUI (from `../BMCommonUI.podspec`)
+  - BMCommonUI (from `..`)
 
 EXTERNAL SOURCES:
   BMCommonUI:
-    :path: "../BMCommonUI.podspec"
+    :path: ".."
 
 SPEC CHECKSUMS:
   BMCommonUI: e8b9f2e9037d0116429b6b1e75a901bd438cafb1
 
-PODFILE CHECKSUM: 941881865972ad95c281bf6df2435776cb9c00ae
+PODFILE CHECKSUM: 1dc6feb3ea3b4f7504b15b16c6c06f87cc09e53c
 
 COCOAPODS: 1.12.1

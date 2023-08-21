@@ -5,6 +5,6 @@ target 'BMCommonUI-Example' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'BMCommonUI', :path => "../BMCommonUI.podspec"
+  pod 'BMCommonUI', :path => ".."
 
 end

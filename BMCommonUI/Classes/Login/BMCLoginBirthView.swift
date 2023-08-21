@@ -97,11 +97,15 @@ struct BMCLoginBgView: View {
       ZStack {
         Color(hex:0x161C44)
           .edgesIgnoringSafeArea(.all)
-        Image("register_bg_img")
-            .resizable()
-            .frame(width: .infinity)
-            .aspectRatio(contentMode: .fit)
+        VStack {
+          Image.BMC("register_bg_img")?
+              .resizable()
+              .frame(width: .infinity)
+              .aspectRatio(contentMode: .fit)
             .edgesIgnoringSafeArea(.all)
+          
+          Spacer()
+        }
       }
     }
 }
