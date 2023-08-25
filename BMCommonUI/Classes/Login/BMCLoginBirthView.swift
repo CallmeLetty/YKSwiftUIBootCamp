@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 public struct BMCLoginBirthView: View {
   @State private var selectedDate = Date()
   @State private var continueEnable: Bool = false
@@ -94,18 +93,14 @@ struct BMCLoginContinueButton: View {
 
 struct BMCLoginBgView: View {
     var body: some View {
-      ZStack {
+        ZStack(alignment: .top) {
         Color(hex:0x161C44)
           .edgesIgnoringSafeArea(.all)
-        VStack {
-          Image.BMC("register_bg_img")?
-              .resizable()
-              .frame(width: .infinity)
-              .aspectRatio(contentMode: .fit)
-            .edgesIgnoringSafeArea(.all)
-          
-          Spacer()
-        }
+            Image.BMC("register_bg_img")?
+                .resizable()
+                .frame(width: .infinity)
+                .aspectRatio(contentMode: .fit)
+              .edgesIgnoringSafeArea(.all)
       }
     }
 }

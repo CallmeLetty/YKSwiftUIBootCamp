@@ -46,7 +46,7 @@ private struct BMCAlertContentView: View {
 
       ZStack(alignment: .center) {
         RoundedRectangle(cornerRadius: 15)
-          .frame(width: UIScreen.main.bounds.width - 80,height: 200)
+          .frame(width: Frame.SCREEN_WIDTH - 80,height: 200)
           .foregroundColor(Color.white)
         VStack {
           if let title = vm.title {
@@ -57,7 +57,7 @@ private struct BMCAlertContentView: View {
           if let content = vm.content {
             Text(content)
               .padding(.bottom, 27.5)
-              .frame(width: UIScreen.main.bounds.width - 80,height: 200)
+              .frame(width: Frame.SCREEN_WIDTH - 80,height: 200)
           }
           
           if let buttonList = vm.buttonList {
@@ -70,7 +70,7 @@ private struct BMCAlertContentView: View {
                   .font(.system(size: 14))
                   .foregroundColor(buttonVM.isMain ? Color.white : Color(hex: 0x555253))
                   .padding(.vertical, 8)
-                  .frame(width: UIScreen.main.bounds.width - 135)
+                  .frame(width: Frame.SCREEN_WIDTH - 135)
                   .background(buttonVM.isMain ? Color(hex: 0xF7599C) : Color.white)
                   .border(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), width: 0.5)
                   .cornerRadius(20)
