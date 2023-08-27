@@ -16,7 +16,7 @@ struct BMCPageControl: View {
 
     var body: some View {
         HStack(alignment: .center, spacing: 6) {
-            ForEach(0 ..< pageCount) { index in
+          ForEach(0 ..< pageCount,id: \.self) { index in
                 let floatIndex = CGFloat(index)
                 let percent = 1 - (abs(floatIndex - currentPage) / 1)
                 let fixedPercent = percent < 0 ? 0 : percent
@@ -35,6 +35,11 @@ struct BMCPageControl: View {
 
 struct BMCPageControl_Previews: PreviewProvider {
     static var previews: some View {
+      ZStack {
+        Color.black
+        
         BMCPageControl(currentPage: 0, pageCount: 3, tintColor: .white, normalColor: .gray)
+      }
+      .edgesIgnoringSafeArea(.all)
     }
 }

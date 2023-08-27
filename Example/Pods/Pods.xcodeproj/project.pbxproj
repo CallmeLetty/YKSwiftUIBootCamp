@@ -27,6 +27,7 @@
 		BA3A497F2852F4424FEC6C38D8C74200 /* BMCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800442EDCB4F649AA2FEDE819894A40D /* BMCExtensions.swift */; };
 		C1C17302303FADCD37EB94A982104B2D /* BMCMeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB40D182810F3FAB77E282132AF4A3 /* BMCMeMainView.swift */; };
 		CB2CF2C0D9BCF867467CE362758ABE03 /* BMCommonUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE8C19A801F2CBAB88D12AD3D807334 /* BMCommonUI.xcassets */; };
+		D39CC7C52A98762D007C1245 /* BMCPageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CC7C42A98762D007C1245 /* BMCPageListView.swift */; };
 		D4A99F352B8CF2FCFB68930215DD5C87 /* Pods-BMCommonUI-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74964B99AA84136A591FD4F72F3B2E48 /* Pods-BMCommonUI-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E880FCDAF76CAB59C1B6E70BFA6E16F6 /* BMCMeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2A2917D2AFEF7970B6031EA83674B /* BMCMeAboutView.swift */; };
 		ED1E0BFD6BE91D162C5FCA6C3E19A4A9 /* BMCommonUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 237B99CD93BC8060739F7A74046E00E4 /* BMCommonUI-dummy.m */; };
@@ -80,6 +81,7 @@
 		B5D7E1BB1CF3C158918E16D4DF7D5FA2 /* BMCLoginChooseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginChooseView.swift; sourceTree = "<group>"; };
 		B85048028DE94CD28CD4FA570906F439 /* BMCommonUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMCommonUI-Info.plist"; sourceTree = "<group>"; };
 		D21C202A973895077B4931B3CAC8B5D8 /* BMCommonUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCommonUI.release.xcconfig; sourceTree = "<group>"; };
+		D39CC7C42A98762D007C1245 /* BMCPageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCPageListView.swift; sourceTree = "<group>"; };
 		D7B5EAAF9BFD362A96AC70F49B8086A5 /* BMCMainTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMainTab.swift; sourceTree = "<group>"; };
 		E1C794018DACD1524C737C8FA9C9113A /* Pods-BMCommonUI-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMCommonUI-Example.modulemap"; sourceTree = "<group>"; };
 		E26C2699D8F0DB03B2FE38F45F9A7FE8 /* BMCLoginBirthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginBirthView.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				8B99BED9A9681E208C13D80260A5952F /* BMCAlertView.swift */,
 				158C955F2A981F2700255710 /* BMCPageControl.swift */,
+				D39CC7C42A98762D007C1245 /* BMCPageListView.swift */,
 			);
 			name = Base;
 			path = BMCommonUI/Classes/Base;
@@ -413,6 +416,7 @@
 			files = (
 				013195C739C0A2B455F7D9562D00E7C3 /* BMCAlertView.swift in Sources */,
 				158C95602A981F2700255710 /* BMCPageControl.swift in Sources */,
+				D39CC7C52A98762D007C1245 /* BMCPageListView.swift in Sources */,
 				A3316E9B6295F3C3076144912A7D8F04 /* BMCBundle.swift in Sources */,
 				BA3A497F2852F4424FEC6C38D8C74200 /* BMCExtensions.swift in Sources */,
 				24150BC4251D7971132048E0C6F91B09 /* BMCLoginBirthView.swift in Sources */,
