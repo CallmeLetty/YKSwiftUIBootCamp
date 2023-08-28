@@ -7,8 +7,24 @@
 
 import SwiftUI
 
+extension View {
+    func registerKeyboard() -> some View {
+        NotificationCenter.default
+            .addObserver(forName: UIResponder.keyboardWillHideNotification,
+                         object: self,
+                         queue: .main) { noti in
+                print(noti.description)
+            }
+        return self
+    }
+}
+
 struct BMCMeChangePasswordView: View {
-    @State var continueEnable: Bool = false
+    private var continueEnable: Bool {
+        get {
+            return judgeButtonState()
+        }
+    }
     
     @State var originPassword: String = "" {
         didSet {
@@ -39,7 +55,8 @@ struct BMCMeChangePasswordView: View {
                 ]
                 
                 ForEach(0..<list.count,id: \.self) { index in
-                    BMCSecureField(text: list[index].1, placeholder: list[index].0)
+                    BMCSecureField(text: list[index].1,
+                                   placeholder: list[index].0)
                         .padding(.vertical, 7.5)
                 }
 
@@ -61,29 +78,19 @@ struct BMCMeChangePasswordView: View {
                 }
                 .padding(.top, 30)
                 .padding(.bottom, 20)
-                .onChange(of: originPassword, perform: { _ in
-                    judgeButtonState()
-                })
-                .onChange(of: newPassword, perform: { _ in
-                    judgeButtonState()
-                })
-                .onChange(of: repestPassword, perform: { _ in
-                    judgeButtonState()
-                })
-
             }
         }
     }
     
     
-    private func judgeButtonState() {
+    private func judgeButtonState() -> Bool {
         if originPassword.count > 0,
            newPassword.count > 0,
            repestPassword.count > 0,
            newPassword == repestPassword {
-            continueEnable = true
+            return true
         } else {
-            continueEnable = false
+            return false
         }
     }
 }
@@ -101,9 +108,11 @@ struct BMCSecureField: View {
                     .padding(.horizontal, 20)
             }
             SecureField(placeholder, text: $text)
-                .frame(height: 60)
-                .foregroundColor(Color(hex: 0xDDE7FF))
-                .padding(.horizontal, 20)
+            .frame(height: 60)
+            .foregroundColor(Color(hex: 0xDDE7FF))
+            .padding(.horizontal, 20)
+            
+                
         }
         .frame(height: 60) // Adjust the height here
         .background(
@@ -119,5 +128,6 @@ struct BMCSecureField: View {
 struct BMCMeChangePasswordView_Previews: PreviewProvider {
     static var previews: some View {
         BMCMeChangePasswordView()
+            
     }
 }

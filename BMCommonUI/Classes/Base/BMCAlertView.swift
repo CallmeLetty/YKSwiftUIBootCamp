@@ -39,16 +39,17 @@ private struct BMCAlertContentView: View {
   private let horizontalPadding: CGFloat = 40
   
   var body: some View {
-    VStack {
-      HStack {
+    VStack() {
+      HStack() {
         Spacer()
         Button {
           presentationMode.wrappedValue.dismiss()
         } label: {
           Image.BMC("btn_close_pop")
         }
-        .padding(.trailing, 135 / 2)
+        .padding(.trailing, horizontalPadding)
       }
+      .padding(.bottom, 25)
       
       VStack {
         if let title = vm.title {
@@ -72,13 +73,17 @@ private struct BMCAlertContentView: View {
               Text(buttonVM.text)
                 .font(.system(size: 14))
                 .foregroundColor(buttonVM.isMain ? Color.white : Color(hex: 0x555253))
-                .padding(.horizontal, 27.5 + horizontalPadding)
-//                .padding(.vertical, 8)
-                .background(buttonVM.isMain ? Color(hex: 0xF7599C) : Color.white)
+                .frame(width: Frame.SCREEN_WIDTH - horizontalPadding * 2 - 27.5 * 2)
                 .frame(height: 36)
-                .border(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), width: 0.5)
-                .cornerRadius(18)
+                .background(buttonVM.isMain ? Color(hex: 0xF7599C) : .white)
             }
+            .border(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), width: 0.5)
+            .cornerRadius(18)
+            .overlay (
+                RoundedRectangle(cornerRadius: 18,style: .continuous)
+                    .stroke(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), lineWidth: 2)
+            )
+            .padding(.bottom, (index == buttonList.count - 1) ? 20 : 10)
           }
         }
       }
