@@ -23,62 +23,70 @@ struct BMCAlertVM {
 struct BMCAlertView: View {
   let vm: BMCAlertVM
   
-    var body: some View {
-      ZStack {
-        Color.black.opacity(0.58)
-        BMCAlertContentView(vm: vm)
-      }
-      .edgesIgnoringSafeArea(.all)
+  var body: some View {
+    ZStack {
+      Color.black.opacity(0.58)
+      BMCAlertContentView(vm: vm)
     }
+    .edgesIgnoringSafeArea(.all)
+  }
 }
 
 private struct BMCAlertContentView: View {
   @Environment(\.presentationMode) var presentationMode
   let vm: BMCAlertVM
   
+  private let horizontalPadding: CGFloat = 40
+  
   var body: some View {
     VStack {
-      Button {
-        presentationMode.wrappedValue.dismiss()
-      } label: {
-        Image.BMC("btn_close_pop")
+      HStack {
+        Spacer()
+        Button {
+          presentationMode.wrappedValue.dismiss()
+        } label: {
+          Image.BMC("btn_close_pop")
+        }
+        .padding(.trailing, 135 / 2)
       }
-
-      ZStack(alignment: .center) {
-        RoundedRectangle(cornerRadius: 15)
-          .frame(width: Frame.SCREEN_WIDTH - 80,height: 200)
-          .foregroundColor(Color.white)
-        VStack {
-          if let title = vm.title {
-            Text(title)
-              .padding(.bottom, 11)
-          }
-          
-          if let content = vm.content {
-            Text(content)
-              .padding(.bottom, 27.5)
-              .frame(width: Frame.SCREEN_WIDTH - 80,height: 200)
-          }
-          
-          if let buttonList = vm.buttonList {
-            ForEach(buttonList.indices, id:\.self) { index in
-              let buttonVM = buttonList[index]
-              Button {
-                buttonVM.action?()
-              } label: {
-                Text(buttonVM.text)
-                  .font(.system(size: 14))
-                  .foregroundColor(buttonVM.isMain ? Color.white : Color(hex: 0x555253))
-                  .padding(.vertical, 8)
-                  .frame(width: Frame.SCREEN_WIDTH - 135)
-                  .background(buttonVM.isMain ? Color(hex: 0xF7599C) : Color.white)
-                  .border(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), width: 0.5)
-                  .cornerRadius(20)
-              }
+      
+      VStack {
+        if let title = vm.title {
+          Text(title)
+            .padding(.top, 20)
+            .padding(.bottom, 10)
+        }
+        
+        if let content = vm.content {
+          Text(content)
+            .padding(.bottom, 27.5)
+            .padding(.horizontal, 20.5 + horizontalPadding)
+        }
+        
+        if let buttonList = vm.buttonList {
+          ForEach(buttonList.indices, id:\.self) { index in
+            let buttonVM = buttonList[index]
+            Button {
+              buttonVM.action?()
+            } label: {
+              Text(buttonVM.text)
+                .font(.system(size: 14))
+                .foregroundColor(buttonVM.isMain ? Color.white : Color(hex: 0x555253))
+                .padding(.horizontal, 27.5 + horizontalPadding)
+//                .padding(.vertical, 8)
+                .background(buttonVM.isMain ? Color(hex: 0xF7599C) : Color.white)
+                .frame(height: 36)
+                .border(buttonVM.isMain ? Color.clear : Color(hex: 0xC3CBD4), width: 0.5)
+                .cornerRadius(18)
             }
           }
         }
       }
+      .background(
+        RoundedRectangle(cornerRadius: 15)
+          .foregroundColor(Color.white)
+          .padding(.horizontal, horizontalPadding)
+      )
     }
   }
 }
