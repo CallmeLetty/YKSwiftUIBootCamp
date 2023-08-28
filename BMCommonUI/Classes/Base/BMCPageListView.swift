@@ -8,37 +8,26 @@
 import SwiftUI
 
 struct BMCPageListView<Content> : View where Content : View {
-  
+  var viewList: [Content]
+  var scrollAction: ((Int, Content) -> Void)
   
   @State var viewSpacing: CGFloat = 0
   @State var viewSize = CGSize(width: Frame.SCREEN_WIDTH,
                                height: Frame.SCREEN_HEIGHT)
-  @State var selection: Int = 0 {
-    didSet {
-      print(selection)
-    }
-  }
+  @State private var selection: Int = 0
   
-  var viewList: [Content]
-  var scrollAction: ((Int, Content) -> Void)
   var body: some View {
     TabView(selection: $selection) {
           ForEach(0 ..< viewList.count,id: \.self) { index in
             viewList[index]
               .onDisappear {
-                scrollAction(index, viewList[index])
+                scrollAction(selection, viewList[selection])
               }
-
           }
     }
     .tabViewStyle(.page)
     .edgesIgnoringSafeArea(.all)
   }
-  
-//  public func onScrollToIndex(perform action: ((Int, Content) -> Void)? = nil) -> BMCPageListView {
-//    action?(selection, viewList[selection])
-//    return self
-//  }
 }
 
 struct BMCPageListView_Previews: PreviewProvider {
@@ -46,13 +35,13 @@ struct BMCPageListView_Previews: PreviewProvider {
     BMCPageListView(viewList: [
       RoundedRectangle(cornerRadius: 10)
         .foregroundColor(Color.black)
-        .edgesIgnoringSafeArea(.all),
+        .frame(width: 30,height: 100),
       RoundedRectangle(cornerRadius: 10)
         .foregroundColor(Color.pink)
-        .edgesIgnoringSafeArea(.all),
+        .frame(width: 30,height: 100),
       RoundedRectangle(cornerRadius: 10)
         .foregroundColor(Color.gray)
-        .edgesIgnoringSafeArea(.all)]) { index, v in
+        .frame(width: 30,height: 100)]) { index, v in
           print("onScrollToIndex \(index)")
         }
   }
