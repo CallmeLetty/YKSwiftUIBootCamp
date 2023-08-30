@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1535C3232A9FF07600C2BD5A /* BMCCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535C3222A9FF07600C2BD5A /* BMCCalendar.swift */; };
 		1BECFB07FEC7EC8CA08FAD3B0D15FB5A /* BMCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977C5AED10F8D368551DCA43181CB31A /* BMCWrapper.swift */; };
 		209E13498CA6602BA93275423D70DC82 /* BMCMeNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB2F7D122BD6815C366B9D333F8070 /* BMCMeNotificationView.swift */; };
 		3480049F3E4D9DD29E95FB2936177474 /* BMCBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28E1D9153E0D73983B61A086BA3A0C /* BMCBundle.swift */; };
@@ -48,6 +49,7 @@
 		000306B052F83F668E1B8EC0E8AF6E48 /* BMCUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCUI.swift; sourceTree = "<group>"; };
 		04F9DB588E42D1F644DF82E52286BDAB /* BMCommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-umbrella.h"; sourceTree = "<group>"; };
 		0F28E1D9153E0D73983B61A086BA3A0C /* BMCBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCBundle.swift; sourceTree = "<group>"; };
+		1535C3222A9FF07600C2BD5A /* BMCCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCCalendar.swift; sourceTree = "<group>"; };
 		159C8458B243D56EBC75CE0970C36C9A /* Pods-BMCommonUI-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMCommonUI-Example-Info.plist"; sourceTree = "<group>"; };
 		15E14FCF0D500EF98D7B242FA829AC6C /* BMCommonUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMCommonUI-dummy.m"; sourceTree = "<group>"; };
 		15F79B9D2FFAE8AF1E81F2E12D40F44B /* Pods-BMCommonUI-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMCommonUI-Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				D586894696F22A23AB5033462EF84EEB /* BMCAlertView.swift */,
 				2B2A5B24FE3E879BE622EC58163C41B6 /* BMCPageControl.swift */,
 				51F47762FEFBCD51892FEB3E94F2F985 /* BMCPageListView.swift */,
+				1535C3222A9FF07600C2BD5A /* BMCCalendar.swift */,
 			);
 			name = Base;
 			path = BMCommonUI/Classes/Base;
@@ -412,6 +415,7 @@
 				64367AAE420793F837C87814D2689AB1 /* BMCLoginBirthView.swift in Sources */,
 				C512B0E682062BFB29F5AD6E474B34BA /* BMCLoginChooseView.swift in Sources */,
 				D6261D182E7BC99409B6156FAC4191B0 /* BMCLoginProgressView.swift in Sources */,
+				1535C3232A9FF07600C2BD5A /* BMCCalendar.swift in Sources */,
 				82612D7E5229AE43ABD347268A80C87E /* BMCLoginWelcomeView.swift in Sources */,
 				B14F2BFEFE7E959DEA36D1A4DFE39E8D /* BMCMainTab.swift in Sources */,
 				3ED22C22922734E7455AE08236B16CAB /* BMCMeAboutView.swift in Sources */,
