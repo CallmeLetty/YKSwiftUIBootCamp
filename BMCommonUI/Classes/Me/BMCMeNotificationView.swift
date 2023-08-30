@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct BMCMeNotificationView: View {
     // EnvironmentValues
-    @Environment(\.dismiss) var dismiss
     @State private var selectedDate = Date()
     @State var continueEnable: Bool = true
     
