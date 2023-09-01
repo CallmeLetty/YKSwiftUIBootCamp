@@ -11,7 +11,7 @@ struct BMCDialogueView: View {
   @State var isPresented: Bool
   @State var title: String
   
-  let insideView: some View
+  let insideView: AnyView
 
   private let hPadding: CGFloat = 16
 
@@ -57,10 +57,10 @@ struct BMCDialogueViewDemo: View {
     .sheet(isPresented: $show) {
       BMCDialogueView(isPresented: show,
                       title: "Detail",
-                      insideView: BMCMeReminderDetailView(title: "",
-                                                                                            detail: "",
-                                                                                            date: Date(),
-                                                                                            repeatType: ""))
+                      insideView: AnyView(BMCMeReminderDetailView(title: "",
+                                                                  detail: "",
+                                                                  date: Date(),
+                                                                  repeatType: "")))
     }
   }
 }
