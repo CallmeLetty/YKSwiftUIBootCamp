@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F26971A16E0134E2944B6873205EFDD /* BMCLoginProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27063BBAEA869D6FF607F720E360D43B /* BMCLoginProgressView.swift */; };
+		1535C3302AA1324C00C2BD5A /* BMCDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535C32F2AA1324C00C2BD5A /* BMCDialogueView.swift */; };
+		1535C3322AA1386900C2BD5A /* BMCMeReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535C3312AA1386900C2BD5A /* BMCMeReminderDetailView.swift */; };
 		1A3D1B6A688470F8D9BD66B5A21D1CC9 /* BMCommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FF87A8032C2E463A04C1F2081ECFE1 /* BMCommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26688171733B4701036FE57331BCA36A /* BMCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82041D4403055399BBB72039713A8642 /* BMCWrapper.swift */; };
 		316AD6F69598B55E22AF9626778DEEE8 /* BMCPageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782C277844BCF6A25418BEEAAA2EBA4 /* BMCPageListView.swift */; };
@@ -26,7 +28,7 @@
 		A086C6F6F452FC988F6F5F0DF3F50790 /* BMCMeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0C2F983268C03CB625A57DC411169 /* BMCMeAboutView.swift */; };
 		AD95DCD9C2AAFA90017775DF8B478004 /* BMCLoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286347A29473C41CCDB1A30A26AEAEEF /* BMCLoginWelcomeView.swift */; };
 		B67E37739A42AE678F2337FAF8289C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C50132C10EF79FEB613286204F1609D3 /* BMCMeNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A0E9A7D964237107C82C0C1002D291 /* BMCMeNotificationView.swift */; };
+		C50132C10EF79FEB613286204F1609D3 /* BMCMeReminderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A0E9A7D964237107C82C0C1002D291 /* BMCMeReminderSettingView.swift */; };
 		C55678A6D60E5A3568977BDA658D417B /* BMCQuizIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA71E2811A2833CEA5E77F7D7C8770 /* BMCQuizIntroView.swift */; };
 		CEA4F06C6B1D35D7C85219E348974FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D4A99F352B8CF2FCFB68930215DD5C87 /* Pods-BMCommonUI-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74964B99AA84136A591FD4F72F3B2E48 /* Pods-BMCommonUI-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +53,8 @@
 		0A84A2D48817ACC695517B02855BAD41 /* BMCommonUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-prefix.pch"; sourceTree = "<group>"; };
 		1370509DFCC9D48A9FD3FE424541680B /* BMCommonUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMCommonUI-Info.plist"; sourceTree = "<group>"; };
 		138E5E4C65CB10CA531485E3527CF593 /* BMCPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageControl.swift; sourceTree = "<group>"; };
+		1535C32F2AA1324C00C2BD5A /* BMCDialogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCDialogueView.swift; sourceTree = "<group>"; };
+		1535C3312AA1386900C2BD5A /* BMCMeReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCMeReminderDetailView.swift; sourceTree = "<group>"; };
 		159C8458B243D56EBC75CE0970C36C9A /* Pods-BMCommonUI-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMCommonUI-Example-Info.plist"; sourceTree = "<group>"; };
 		15F79B9D2FFAE8AF1E81F2E12D40F44B /* Pods-BMCommonUI-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMCommonUI-Example-frameworks.sh"; sourceTree = "<group>"; };
 		18A0C2F983268C03CB625A57DC411169 /* BMCMeAboutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeAboutView.swift; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 		E1C794018DACD1524C737C8FA9C9113A /* Pods-BMCommonUI-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMCommonUI-Example.modulemap"; sourceTree = "<group>"; };
 		E658ABAF0621FD3BEE3B6B438EF255B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EF010FEBB87E8CB958F3D4CF663A47DE /* BMCommonUI.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = BMCommonUI.xcassets; path = BMCommonUI/Assets/BMCommonUI.xcassets; sourceTree = "<group>"; };
-		F5A0E9A7D964237107C82C0C1002D291 /* BMCMeNotificationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeNotificationView.swift; sourceTree = "<group>"; };
+		F5A0E9A7D964237107C82C0C1002D291 /* BMCMeReminderSettingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeReminderSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				27ABE9E605584B3F0EBCF71459EBD67F /* BMCCalendar.swift */,
 				138E5E4C65CB10CA531485E3527CF593 /* BMCPageControl.swift */,
 				3782C277844BCF6A25418BEEAAA2EBA4 /* BMCPageListView.swift */,
+				1535C32F2AA1324C00C2BD5A /* BMCDialogueView.swift */,
 			);
 			name = Base;
 			path = BMCommonUI/Classes/Base;
@@ -276,7 +281,8 @@
 				18A0C2F983268C03CB625A57DC411169 /* BMCMeAboutView.swift */,
 				8EAC41187E6BE29FCA0F6219B332C5B2 /* BMCMeChangePasswordView.swift */,
 				493D1A429B9F80A7104807DEE2F759EF /* BMCMeMainView.swift */,
-				F5A0E9A7D964237107C82C0C1002D291 /* BMCMeNotificationView.swift */,
+				F5A0E9A7D964237107C82C0C1002D291 /* BMCMeReminderSettingView.swift */,
+				1535C3312AA1386900C2BD5A /* BMCMeReminderDetailView.swift */,
 			);
 			name = Me;
 			path = BMCommonUI/Classes/Me;
@@ -441,7 +447,7 @@
 				A086C6F6F452FC988F6F5F0DF3F50790 /* BMCMeAboutView.swift in Sources */,
 				44E0ECD1E3EBACC35180590C3ADFAB04 /* BMCMeChangePasswordView.swift in Sources */,
 				881B18B17A36E69FE788A1A5AD926E0C /* BMCMeMainView.swift in Sources */,
-				C50132C10EF79FEB613286204F1609D3 /* BMCMeNotificationView.swift in Sources */,
+				C50132C10EF79FEB613286204F1609D3 /* BMCMeReminderSettingView.swift in Sources */,
 				323B9F28606982137634EAD8B49EED7F /* BMCommonUI-dummy.m in Sources */,
 				5293251590CD37350CE96A865EC2354B /* BMCPageControl.swift in Sources */,
 				316AD6F69598B55E22AF9626778DEEE8 /* BMCPageListView.swift in Sources */,
@@ -449,6 +455,8 @@
 				338EB6379C6E7CD8B84022ADE4FF8159 /* BMCSubScriptionView.swift in Sources */,
 				DD5C6874AF3237B4EDCA0563179A613B /* BMCUI.swift in Sources */,
 				26688171733B4701036FE57331BCA36A /* BMCWrapper.swift in Sources */,
+				1535C3322AA1386900C2BD5A /* BMCMeReminderDetailView.swift in Sources */,
+				1535C3302AA1324C00C2BD5A /* BMCDialogueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

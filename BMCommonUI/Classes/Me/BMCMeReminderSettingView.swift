@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BMCMeNotificationView: View {
+struct BMCMeReminderSettingView: View {
     // EnvironmentValues
     @State private var selectedDate = Date()
     @State var continueEnable: Bool = true
@@ -76,10 +76,10 @@ struct BMCMeNotificationView: View {
     }
 }
 
-struct BMCMeNotificationView_Previews: PreviewProvider {
+struct BMCMeReminderSettingView_Previews: PreviewProvider {
     static var previews: some View {
       if #available(iOS 15.0, *) {
-        BMCMeNotificationView()
+        BMCMeReminderSettingView()
       } else {
         // Fallback on earlier versions
       }
