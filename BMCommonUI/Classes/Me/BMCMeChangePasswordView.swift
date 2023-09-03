@@ -62,7 +62,7 @@ struct BMCMeChangePasswordView: View {
 
                 Text("Password should contain 8-18 characters and should at least include two types from letter, number and symbol.")
                     .padding(.horizontal, 20)
-                    .foregroundColor(Color(hex: 0xDDE7FF).opacity(0.5))
+                    .foregroundColor(BMCColor.title.opacity(0.5))
                     .multilineTextAlignment(.leading)
                 
                 Spacer()
@@ -103,13 +103,13 @@ struct BMCSecureField: View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 Text(placeholder)
-                    .foregroundColor(Color(hex: 0xDDE7FF).opacity(0.5))
+                    .foregroundColor(BMCColor.title.opacity(0.5))
                     .padding(.horizontal, 4)
                     .padding(.horizontal, 20)
             }
             SecureField(placeholder, text: $text)
             .frame(height: 60)
-            .foregroundColor(Color(hex: 0xDDE7FF))
+            .foregroundColor(BMCColor.title)
             .padding(.horizontal, 20)
             
                 

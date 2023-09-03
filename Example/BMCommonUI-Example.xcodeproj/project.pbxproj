@@ -38,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1535C3332AA2A18500C2BD5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		25A487545F110CBE87A08DE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +83,7 @@
 		D30968C52A92F93B00CF578B /* BMCommonUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				1535C3332AA2A18500C2BD5A /* Resources */,
 				D30968C62A92F93B00CF578B /* BMCommonUI_ExampleApp.swift */,
 				D30968C82A92F93B00CF578B /* ContentView.swift */,
 				D30968CA2A92F93C00CF578B /* Assets.xcassets */,
@@ -137,6 +145,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D30968BA2A92F93B00CF578B;
 			productRefGroup = D30968C42A92F93B00CF578B /* Products */;

@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.resource  = "#{spec.name}/Assets/**/*"
   # spec.resources = "Resources/*.png"
+  spec.resource = '#{spec.name}/Base/*.strings'
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"

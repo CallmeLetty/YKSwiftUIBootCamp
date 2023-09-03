@@ -35,11 +35,11 @@ struct BMCMeReminderSettingView: View {
                     ForEach(0..<weekText.count, id: \.self) { index in
                         Text(weekText[index])
                             .font(Font(CTFont(.label, size: 12)))
-                            .foregroundColor(Color(hex: 0xDDE7FF))
+                            .foregroundColor(BMCColor.title)
 
                             .padding(.horizontal,8)
                             .padding(.vertical,11)
-                            .background(Color(hex: 0xDDE7FF).opacity(0.1))
+                            .background(BMCColor.title.opacity(0.1))
                             .cornerRadius(20)
                     }
                 }
@@ -56,7 +56,7 @@ struct BMCMeReminderSettingView: View {
                 Spacer()
                 Text("You must select both the day and the time you want to exercise. Perseverance and regularity can help you achieve stunning results.")
                     .padding(.horizontal, 47.5)
-                    .foregroundColor(Color(hex: 0xDDE7FF).opacity(0.5))
+                    .foregroundColor(BMCColor.title.opacity(0.5))
                     .multilineTextAlignment(.center)
                 
                 Button {

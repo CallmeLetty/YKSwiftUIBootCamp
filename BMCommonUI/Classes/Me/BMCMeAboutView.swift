@@ -45,6 +45,7 @@ public struct BMCMeAboutView: View {
             NavigationLink(model.title,
                            destination: Text(model.title))
           }
+          .background(Color.clear)
           .frame(maxHeight: singleCellHeight * CGFloat(tableData.count))
 
         }

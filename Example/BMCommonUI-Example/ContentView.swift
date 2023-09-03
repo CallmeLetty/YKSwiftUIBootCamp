@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import BMCommonUI
 
 struct ContentView: View {
+  @State var show = true
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+      
+        Button("Show Dialogue") {
+          show.toggle()
         }
-        .padding()
+        .sheet(isPresented: $show) {
+          BMCDialogueView(isPresented: show,
+                          title: "Detail",
+                          insideView: AnyView(BMCMeReminderDetailView(title: "",
+                                                                      detail: "",
+                                                                      date: Date(),
+                                                                      repeatType: .never)))
+        }
+      
     }
 }
 

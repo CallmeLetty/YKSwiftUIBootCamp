@@ -20,5 +20,5 @@
   },
   "source_files": "BMCommonUI/Classes/**/*",
   "requires_arc": true,
-  "resources": "BMCommonUI/Assets/**/*"
+  "resources": "#{spec.name}/Base/*.strings"
 }

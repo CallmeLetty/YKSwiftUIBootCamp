@@ -46,7 +46,7 @@ struct BMCSubScriptionView: View {
                 
                 HStack {
                     Text("Begin your journey with 3 days free trial")
-                        .foregroundColor(Color(hex: 0xDDE7FF).opacity(0.6))
+                        .foregroundColor(BMCColor.title.opacity(0.6))
                         .font(.system(size: 16))
                     .padding(.horizontal,20)
                     Spacer()
@@ -62,7 +62,7 @@ struct BMCSubScriptionView: View {
                 
                 Text("Get a 3-day free trial")
                     .font(.system(size: 14))
-                    .foregroundColor(Color(hex: 0xDDE7FF))
+                    .foregroundColor(BMCColor.title)
                     .padding(.bottom, 16)
                 
                 Button {
@@ -212,7 +212,7 @@ struct BMCSubScriptionInfo: View {
                             }
                             Text(info.subtitle)
                                 .font(.system(size: 14))
-                                .foregroundColor(Color(hex: 0xDDE7FF))
+                                .foregroundColor(BMCColor.title)
                                 .padding(.leading, 40)
                             
                         }
@@ -239,7 +239,7 @@ struct BMCSubscriptionBottomView: View {
                     print(list[index])
                 } label: {
                     Text(list[index])
-                        .foregroundColor(Color(hex: 0xDDE7FF).opacity(0.5))
+                        .foregroundColor(BMCColor.title.opacity(0.5))
                         .font(.system(size: 12))
                         .underline()
                 }

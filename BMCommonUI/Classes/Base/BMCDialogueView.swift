@@ -7,15 +7,23 @@
 
 import SwiftUI
 
-struct BMCDialogueView: View {
-  @State var isPresented: Bool
-  @State var title: String
+public struct BMCDialogueView: View {
+  @State public var isPresented: Bool
+  @State public var title: String
   
-  let insideView: AnyView
+  public let insideView: AnyView
+  
+  public init(isPresented: Bool,
+              title: String,
+              insideView: AnyView) {
+    self.isPresented = isPresented
+    self.title = title
+    self.insideView = insideView
+  }
 
   private let hPadding: CGFloat = 16
 
-    var body: some View {
+  public var body: some View {
       ZStack {
         Color(hex: 0x161C44)
           .edgesIgnoringSafeArea(.all)
@@ -29,7 +37,7 @@ struct BMCDialogueView: View {
             Spacer()
             
             Text(title)
-              .foregroundColor(Color(hex: 0xDDE7FF))
+              .foregroundColor(BMCColor.title)
               .font(.system(size: 17))
             Spacer()
             
@@ -41,7 +49,7 @@ struct BMCDialogueView: View {
           
           insideView
         }
-        .background(Color.clear)
+        .background(BMCColor.normalBg)
         .edgesIgnoringSafeArea(.all)
       }
     }
@@ -60,7 +68,7 @@ struct BMCDialogueViewDemo: View {
                       insideView: AnyView(BMCMeReminderDetailView(title: "",
                                                                   detail: "",
                                                                   date: Date(),
-                                                                  repeatType: "")))
+                                                                  repeatType: .never)))
     }
   }
 }

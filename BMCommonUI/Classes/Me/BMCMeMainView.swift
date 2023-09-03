@@ -58,7 +58,7 @@ struct BMCMeMainView: View {
                     print("Delet Account")
                 } label: {
                     Text("Delete Account")
-                    .foregroundColor(Color(hex: 0xDDE7FF))
+                    .foregroundColor(BMCColor.title)
                     .underline()
                 }
                 .padding(.top, 30)
@@ -78,7 +78,7 @@ struct BMCMeMainCell: View {
             Color(hex: 0x213358)
             HStack {
                 Text(title)
-                    .foregroundColor(Color(hex:0xDDE7FF))
+                .foregroundColor(BMCColor.title)
                     .font(.body)
                     .padding(.leading,16)
                 Spacer()
