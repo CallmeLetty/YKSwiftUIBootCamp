@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
-public enum BMCMeReminderRepeatType: CaseIterable {
-  case never,daily,everyMonday,everyTuesday,everyWednesday,
+import UIKit
+
+public enum BMCMeReminderRepeatType: Int, CaseIterable {
+  case never = 0,daily,everyMonday,everyTuesday,everyWednesday,
   everyThursday,everyFriday,everySaturday,everySunday,weeksdays,
   weekends
   
@@ -61,7 +63,6 @@ public struct BMCMeReminderDetailView: View {
   private let hPadding: CGFloat = 16
   
   public var body: some View {
-      NavigationView {
         ZStack(alignment: .top) {
           ScrollView(.vertical) {
             VStack {
@@ -96,11 +97,6 @@ public struct BMCMeReminderDetailView: View {
                 .font(.system(size: 17))
                 .padding(.horizontal, 12)
                 .multilineTextAlignment(.leading)
-                .onAppear{
-                  UITextView.appearance().backgroundColor = UIColor(cgColor: BMCColor.cardBg.cgColor!)
-                }
-
-              
               }
               .padding(.horizontal,hPadding)
               .background(
@@ -181,8 +177,9 @@ public struct BMCMeReminderDetailView: View {
             .cornerRadius(12)
             .offset(y: 52)
           }
-        }.background(BMCColor.normalBg)
-      }.background(BMCColor.normalBg)
+        }
+        .background(BMCColor.normalBg)
+      
     }
 }
 
@@ -190,37 +187,73 @@ struct BMCReminderDetailRepeatView: View {
   
   @Binding var repeatType: BMCMeReminderRepeatType
   
+  @Environment(\.presentationMode) var presentationMode
+  
   private let repeatList = BMCMeReminderRepeatType.allCases.map{return $0.desc}
   
   var body: some View {
-    VStack {
-      ForEach(repeatList, id:\.self) { str in
-        Text(str)
-          .foregroundColor(BMCColor.title)
-          .frame(width: Frame.SCREEN_WIDTH - 12 * 2,height: 50)
-          .background(BMCColor.cardBg)
-          .cornerRadius(12)
+    ZStack {
+      BMCColor.normalBg.edgesIgnoringSafeArea(.all)
+      VStack(spacing: 0) {
+        List(0..<repeatList.count,id:\.self) { index in
+
+          Text(repeatList[index])
+            .foregroundColor(BMCColor.title)
+            .frame(width: Frame.SCREEN_WIDTH - 12 * 2,height: 50)
+            .cornerRadius(12)
+            .listRowBackground(BMCColor.cardBg)
+            .onTapGesture {
+              repeatType = BMCMeReminderRepeatType(rawValue: index) ?? .never
+              
+              presentationMode.wrappedValue.dismiss()
+            }
+        }
+        .listRowBackground(Color.clear)
+        .background(Color.clear)
+        .frame(width: Frame.SCREEN_WIDTH - 12 * 2,height: CGFloat(repeatList.count + 5) * 50)
+        .cornerRadius(12)
+      .listStyle(.plain)
+        
+        Spacer()
       }
-      
+      .padding(.top, 21)
+//      VStack(spacing: 0) {
+//        ForEach(repeatList, id:\.self) { str in
+//          Text(str)
+//            .foregroundColor(BMCColor.title)
+//            .frame(width: Frame.SCREEN_WIDTH - 12 * 2,height: 50)
+//            .cornerRadius(12)
+//            .background(BMCColor.cardBg)
+//
+//          Path { path in
+//            path.move(to: CGPoint(x:Frame.SCREEN_WIDTH - (12+11) * 2, y:0))
+//            path.addLine(to: CGPoint(x:11, y:0))
+//          }.stroke(Color.white.opacity(0.2), lineWidth:0.5)
+//        }
+//      }
+//      .frame(width: Frame.SCREEN_WIDTH - 12 * 2,height: CGFloat(repeatList.count) * 50)
+//      .cornerRadius(12)
+//      .edgesIgnoringSafeArea(.all)
     }
-    .background(BMCColor.normalBg)
-    .cornerRadius(12)
+//    .edgesIgnoringSafeArea(.all)
   }
 }
 
 struct BMCMeReminderDetailView_Previews: PreviewProvider {
     static var previews: some View {
-      BMCMeReminderDetailView(title: "",
-                              detail: "",
-                              date: Date(),
-                              repeatType: .never)
+      NavigationView {
+        BMCMeReminderDetailView(title: "",
+                                detail: "",
+                                date: Date(),
+                                repeatType: .never)
+      }
     }
 }
+
 extension UITextView {
     open override var frame: CGRect {
         didSet {
-            backgroundColor = .clear // 清除TextView背景颜色
-            
+            backgroundColor = .clear //<<here clear
         }
 
     }

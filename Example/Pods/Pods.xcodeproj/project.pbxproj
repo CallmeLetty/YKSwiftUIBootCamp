@@ -32,6 +32,7 @@
 		C47164C332E2515802160462AECB8503 /* BMCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CEFA4E21B5AF10D719D135E97870E4 /* BMCExtensions.swift */; };
 		C99D86E519E1D7E2C58C736AED4BBF10 /* BMCLoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8DF0F603823211EDD69AF9518FF66 /* BMCLoginWelcomeView.swift */; };
 		D135C6761DCAA255AECB24B048CF4049 /* BMCommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F57149686F01C3689BD4E9C5E0AA33B /* BMCommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D385163B2AA5E22C0001C3EB /* BMCCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */; };
 		D4A99F352B8CF2FCFB68930215DD5C87 /* Pods-BMCommonUI-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74964B99AA84136A591FD4F72F3B2E48 /* Pods-BMCommonUI-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D935A20E8690EBCB67A2A2DDCF4E3DC2 /* BMCCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A68A7127DB048CA17CFD187A06DC5 /* BMCCalendar.swift */; };
 		E31EE3584DAF15F1FA98B63A60AE3CE4 /* BMCLoginChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D0783E3A541EAD4BED5E320C44477 /* BMCLoginChooseView.swift */; };
@@ -89,6 +90,7 @@
 		B8ABAF0B17F4648713A09CF56253A8CF /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9D78DDF09954E4BC77DF2F34B13E8A9 /* BMCAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCAlertView.swift; sourceTree = "<group>"; };
 		CEA8DF0F603823211EDD69AF9518FF66 /* BMCLoginWelcomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginWelcomeView.swift; sourceTree = "<group>"; };
+		D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCCircleProgressView.swift; sourceTree = "<group>"; };
 		D8CE8DD35C36073F431FB9574F7C2194 /* BMCWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCWrapper.swift; sourceTree = "<group>"; };
 		E1C794018DACD1524C737C8FA9C9113A /* Pods-BMCommonUI-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMCommonUI-Example.modulemap"; sourceTree = "<group>"; };
 		E88A68A7127DB048CA17CFD187A06DC5 /* BMCCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCCalendar.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				44632F1652708029A59076935F112065 /* BMCPageControl.swift */,
 				77622E6C04C9610258ED76E02E6D96CB /* BMCPageListView.swift */,
 				E60B5D872E0D5C9BDA83F652B5BAFACF /* Localizable.strings */,
+				D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */,
 			);
 			name = Base;
 			path = BMCommonUI/Classes/Base;
@@ -461,6 +464,7 @@
 				0BD70CC800B9D2709A61AF8218E37921 /* BMCWrapper.swift in Sources */,
 				332304E9C16E1728423C4DAAC96E85EF /* Localizable.strings in Sources */,
 				21A9BF7A2CD42334E645A6496FDDC47F /* Localizable.strings in Sources */,
+				D385163B2AA5E22C0001C3EB /* BMCCircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

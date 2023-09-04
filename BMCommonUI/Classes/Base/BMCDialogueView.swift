@@ -24,34 +24,37 @@ public struct BMCDialogueView: View {
   private let hPadding: CGFloat = 16
 
   public var body: some View {
+    NavigationView {
       ZStack {
-        Color(hex: 0x161C44)
-          .edgesIgnoringSafeArea(.all)
-        
-        VStack {
-          HStack {
-            Button("Cancel") {
-              isPresented.toggle()
-            }.padding(.horizontal, hPadding)
-            
-            Spacer()
-            
-            Text(title)
-              .foregroundColor(BMCColor.title)
-              .font(.system(size: 17))
-            Spacer()
-            
-            Button("Done") {
-              isPresented.toggle()
-            }.padding(.horizontal, hPadding)
-          }
-          .frame(height: 56)
+          Color(hex: 0x161C44)
+            .edgesIgnoringSafeArea(.all)
           
-          insideView
+          VStack {
+            HStack {
+              Button("Cancel") {
+                isPresented.toggle()
+              }.padding(.horizontal, hPadding)
+              
+              Spacer()
+              
+              Text(title)
+                .foregroundColor(BMCColor.title)
+                .font(.system(size: 17))
+              Spacer()
+              
+              Button("Done") {
+                isPresented.toggle()
+              }.padding(.horizontal, hPadding)
+            }
+            .frame(height: 56)
+            
+            insideView
+          }
+          .background(BMCColor.normalBg)
+          .edgesIgnoringSafeArea(.all)
         }
-        .background(BMCColor.normalBg)
-        .edgesIgnoringSafeArea(.all)
-      }
+      .edgesIgnoringSafeArea(.all)
+    }
     }
 }
 
