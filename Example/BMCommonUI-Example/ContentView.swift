@@ -10,21 +10,9 @@ import BMCommonUI
 
 struct ContentView: View {
   @State var show = true
-    var body: some View {
-      
-        Button("Show Dialogue") {
-          show.toggle()
-        }
-        .sheet(isPresented: $show) {
-          BMCDialogueView(isPresented: show,
-                          title: "Detail",
-                          insideView: AnyView(BMCMeReminderDetailView(title: "",
-                                                                      detail: "",
-                                                                      date: Date(),
-                                                                      repeatType: .never)))
-        }
-      
-    }
+  var body: some View {
+    BMCLoginFakeProgressView(duration: 3)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

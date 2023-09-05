@@ -7,41 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BD70CC800B9D2709A61AF8218E37921 /* BMCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE8DD35C36073F431FB9574F7C2194 /* BMCWrapper.swift */; };
-		21A9BF7A2CD42334E645A6496FDDC47F /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E1FA284B047DD9702355D95D303E /* Localizable.strings */; };
-		332304E9C16E1728423C4DAAC96E85EF /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B8ABAF0B17F4648713A09CF56253A8CF /* Localizable.strings */; };
+		02AE1CC6E299F3EC0647FF663BC91F38 /* BMCMeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE93D7A1F2337CCCF7DA2B4FB4B261 /* BMCMeMainView.swift */; };
+		058097C7FCC0C9D788A6D7937A0E21BD /* BMCQuizIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DD7A36A730918B75E138E729F4377 /* BMCQuizIntroView.swift */; };
+		0A0DD1DC6030808165F858C2D7FC8F80 /* BMCUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9058BB4C903F880A647AFED6521DF /* BMCUI.swift */; };
+		0FF75DA44D590406B35948912E55106F /* BMCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40936DEC1C03693B56E4505FF595BF0 /* BMCWrapper.swift */; };
+		17AC126FACE0E829891DBE8474C1A982 /* BMCSubScriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD02E204AB89D5D69D31F992E5276B /* BMCSubScriptionView.swift */; };
+		202D0020503859952CF96623E9618338 /* BMCDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34930552688BC41C41004BEB627BE276 /* BMCDialogueView.swift */; };
+		2E43B299249CBC24C1F4474D33320F52 /* BMCCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67522C17FA34ED3CA7A9A45C4E3476 /* BMCCalendar.swift */; };
+		42AD499BAD5498CEA668F8F8E6EC54A7 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 0FADF066D4A90D439595E274CD050E14 /* Localizable.strings */; };
+		46D9A25D9C822A91FD36FE55C5934735 /* BMCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE16CE723964F37DFC85B680E6E76FA /* BMCAlertView.swift */; };
+		472056439567EEF65176EBFA436F8D6D /* BMCMeChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37057E622D541E1828E015D84480ED59 /* BMCMeChangePasswordView.swift */; };
+		50CB70D46A48C0600DB07DA85A7EF3CE /* BMCCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476198032932650F5263D1135270DD22 /* BMCCircleProgressView.swift */; };
 		521573CF8DD3E8165A617066431B96FA /* Pods-BMCommonUI-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 976207C4F2E81576FFAD3F107C44E10A /* Pods-BMCommonUI-Example-dummy.m */; };
-		564579587904E751C0A335CBA21D064F /* BMCQuizIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574B9B2EF6CE1E7B5246D56A702E3C1 /* BMCQuizIntroView.swift */; };
-		56D918DE88BCC0A9929A0ACA7E4F2060 /* BMCUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA9CE03A01155DAC4D8BF95D4AA2A4 /* BMCUI.swift */; };
-		66E6ED4B7C9153B93BB1EE0639DEF1EA /* BMCMainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D212F3770D96C7639FD43A5FB7FA4D5 /* BMCMainTab.swift */; };
-		68079C7232D1C4600C69C7D99D133851 /* BMCommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EAEE84D36C1F3C7E5D128AE3663986 /* BMCommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69159AF7DF890F3CF04A630BD80784CD /* BMCPageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77622E6C04C9610258ED76E02E6D96CB /* BMCPageListView.swift */; };
-		715902279A532DCDDAAC0FD3F2F20E50 /* BMCMeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA518FD555743009183120AEF7E18F7 /* BMCMeMainView.swift */; };
-		77D39AA0C75FEDB8F89F860BAE62E2BE /* BMCBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E20894BD25E6300BF6E85F660A2A1 /* BMCBundle.swift */; };
-		850723E6DEF14D382DBEA59F4548C63E /* BMCSubScriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23854BD689270F54B0BF3CD152517F /* BMCSubScriptionView.swift */; };
-		8C3F213F04A4E5EF4FA58394537C1016 /* BMCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44632F1652708029A59076935F112065 /* BMCPageControl.swift */; };
-		8D18CA8BDB1C90ED136F19B036DD1F9D /* BMCMeChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65AC4FEC4194CBD1E630673989F0C1 /* BMCMeChangePasswordView.swift */; };
-		8FDD23CCEBF9352DA71C0D6DF0D92AB4 /* BMCommonUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8370B596FB81D058BAF949699126A45 /* BMCommonUI-dummy.m */; };
-		91340D54DAA486A0D98ACC77312C6B61 /* BMCDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443E7E863C2903D01BB668C923B502 /* BMCDialogueView.swift */; };
-		93F28EB2E62BAD3B26CE0BEA8FF4DDD6 /* BMCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78DDF09954E4BC77DF2F34B13E8A9 /* BMCAlertView.swift */; };
-		9D882687E327F4A347A439692FEFB6AC /* BMCMeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815836E7F2708338DD05CC6D1E95C17A /* BMCMeAboutView.swift */; };
-		A1A36FDA7CFA3C9D1D9D52DAB6205EFE /* BMCLoginBirthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E4553D69D91A08B9FCB55D3574A99 /* BMCLoginBirthView.swift */; };
-		AB5D88F5CC4E0207AC7A38B094916340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		53B0E4597682BAE09DD0D3D0CA3F5B9B /* BMCLoginChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991456C2CF53F6762CD2DA33106A246 /* BMCLoginChooseView.swift */; };
+		5A90712A3EFB30D57E16093E464510D1 /* BMCommonUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C7CFCC2E4928717F3A0239148966C /* BMCommonUI-dummy.m */; };
+		5F521E8CF2B2CF52443EB9E7B1C95562 /* BMCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E9783E01819DB365921C5FB20C5AC9 /* BMCPageControl.swift */; };
+		74454FD7F9A83CF24A3810C55A60F916 /* BMCMeReminderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82E2DD408BAE72177CFD7588AF2A792 /* BMCMeReminderSettingView.swift */; };
+		757BFEE5B6F9C7EE115C7E0BBAB532DB /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = D803D30170E2CF09A20FADA79D69F63D /* Localizable.strings */; };
+		781A84DE0C9366105F5B820C15B170A6 /* BMCMeReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D78049563A308496E4D1F368337565 /* BMCMeReminderDetailView.swift */; };
+		7ADCF27E1289DFA55FDF6E892A5A348A /* BMCBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74D1C81208BD495E8EB74438689C10 /* BMCBundle.swift */; };
+		94AE390BE55ED52FB45C3046710C4BFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		96218E5FBE0F5CE4E9F032A9EB29DF41 /* BMCommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F96A47F0EA6D3DAE37ED6828CD8E6E87 /* BMCommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		972088DCB6A0A3AD1B6AA9195E0620A8 /* BMCLoginBirthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67068850088AB79C68318B99D7D57328 /* BMCLoginBirthView.swift */; };
+		99A72FF07AA7CFDC609EF4B128BCDB58 /* BMCommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8832DAF332D9BE9401D8FDBE11B8F1 /* BMCommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A842F8DE5FEC9BB195543373987CE7F9 /* BMCLoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44904D2E5364A1DAD61623BC7EE21734 /* BMCLoginWelcomeView.swift */; };
 		B67E37739A42AE678F2337FAF8289C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BB77FF708C71410CB637250194024DD6 /* BMCLoginProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC88C6055DAB4979A5B60D4BB9B366E /* BMCLoginProgressView.swift */; };
-		C47164C332E2515802160462AECB8503 /* BMCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CEFA4E21B5AF10D719D135E97870E4 /* BMCExtensions.swift */; };
-		C99D86E519E1D7E2C58C736AED4BBF10 /* BMCLoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8DF0F603823211EDD69AF9518FF66 /* BMCLoginWelcomeView.swift */; };
-		D135C6761DCAA255AECB24B048CF4049 /* BMCommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F57149686F01C3689BD4E9C5E0AA33B /* BMCommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D385163B2AA5E22C0001C3EB /* BMCCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */; };
+		B7AE304691BB26552AE30CB38E7C0DDF /* BMCommonUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9102816C96E2DEB1CA60BE0EDD10C78 /* BMCommonUI.xcassets */; };
+		C7A1383AD1F4B1E1D2ECEEF9D962FFC1 /* BMCMainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6094E96399B2F516E831C683FA71B60E /* BMCMainTab.swift */; };
+		D42065E7D72B65496BD3DC4EB04DD600 /* BMCMeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F027D4B88CDF637A6830B1397EF575 /* BMCMeAboutView.swift */; };
 		D4A99F352B8CF2FCFB68930215DD5C87 /* Pods-BMCommonUI-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74964B99AA84136A591FD4F72F3B2E48 /* Pods-BMCommonUI-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D935A20E8690EBCB67A2A2DDCF4E3DC2 /* BMCCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A68A7127DB048CA17CFD187A06DC5 /* BMCCalendar.swift */; };
-		E31EE3584DAF15F1FA98B63A60AE3CE4 /* BMCLoginChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D0783E3A541EAD4BED5E320C44477 /* BMCLoginChooseView.swift */; };
-		F1566EDA98282B36CC4420F16A28DFB4 /* BMCMeReminderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534E91C5635337007F47AADF8F9C99B /* BMCMeReminderSettingView.swift */; };
-		FDF5E403278FAE4AA5893C29743FE9BC /* BMCMeReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166DCFC6F30143721232C761297F8C /* BMCMeReminderDetailView.swift */; };
+		D9A7F3CCC177BD4910F60517564BCAAF /* BMCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732CC0B49EEDCC038693038038041D6 /* BMCExtensions.swift */; };
+		E4F84D8C1A813B3A7762A9DDD63D948D /* BMCLoginFakeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F5CCCBF46EEDF54963D23777387F2 /* BMCLoginFakeProgressView.swift */; };
+		E8149FFFDE33E9AC64ACF702898BEA86 /* BMCPageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3FF6B5F255C2CE8CC35D96C30BCF4 /* BMCPageListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AACF2B42C1465FB13DEC40CB0EB2C4F6 /* PBXContainerItemProxy */ = {
+		D201F390A8328DE132791A7DB29965B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -51,65 +52,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F23854BD689270F54B0BF3CD152517F /* BMCSubScriptionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCSubScriptionView.swift; sourceTree = "<group>"; };
-		1534E91C5635337007F47AADF8F9C99B /* BMCMeReminderSettingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeReminderSettingView.swift; sourceTree = "<group>"; };
+		02D78049563A308496E4D1F368337565 /* BMCMeReminderDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeReminderDetailView.swift; sourceTree = "<group>"; };
+		02F027D4B88CDF637A6830B1397EF575 /* BMCMeAboutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeAboutView.swift; sourceTree = "<group>"; };
+		033C7CFCC2E4928717F3A0239148966C /* BMCommonUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMCommonUI-dummy.m"; sourceTree = "<group>"; };
+		0A8F5CCCBF46EEDF54963D23777387F2 /* BMCLoginFakeProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginFakeProgressView.swift; sourceTree = "<group>"; };
+		0FADF066D4A90D439595E274CD050E14 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		159C8458B243D56EBC75CE0970C36C9A /* Pods-BMCommonUI-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMCommonUI-Example-Info.plist"; sourceTree = "<group>"; };
 		15F79B9D2FFAE8AF1E81F2E12D40F44B /* Pods-BMCommonUI-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMCommonUI-Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B21E3A13791673B8F0CF60D158E7B97 /* Pods-BMCommonUI-Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BMCommonUI-Example"; path = Pods_BMCommonUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C70301AD3D332AF1C1A24F891EE9E89 /* BMCommonUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCommonUI.release.xcconfig; sourceTree = "<group>"; };
-		1D212F3770D96C7639FD43A5FB7FA4D5 /* BMCMainTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMainTab.swift; sourceTree = "<group>"; };
-		20CEFA4E21B5AF10D719D135E97870E4 /* BMCExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCExtensions.swift; sourceTree = "<group>"; };
-		2BC88C6055DAB4979A5B60D4BB9B366E /* BMCLoginProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginProgressView.swift; sourceTree = "<group>"; };
-		32D380DBD74573259E7C9E57E6C0970D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3C1E4553D69D91A08B9FCB55D3574A99 /* BMCLoginBirthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginBirthView.swift; sourceTree = "<group>"; };
+		1C8832DAF332D9BE9401D8FDBE11B8F1 /* BMCommonUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMCommonUI.h; path = BMCommonUI/Classes/BMCommonUI.h; sourceTree = "<group>"; };
+		34930552688BC41C41004BEB627BE276 /* BMCDialogueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCDialogueView.swift; sourceTree = "<group>"; };
+		35038D779ACE038340317AA4DD371F83 /* BMCommonUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BMCommonUI.modulemap; sourceTree = "<group>"; };
+		37057E622D541E1828E015D84480ED59 /* BMCMeChangePasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeChangePasswordView.swift; sourceTree = "<group>"; };
 		3DB2E2D8CED7E52493E5ABC9C36AFF71 /* Pods-BMCommonUI-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMCommonUI-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		44632F1652708029A59076935F112065 /* BMCPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageControl.swift; sourceTree = "<group>"; };
-		4D71E1FA284B047DD9702355D95D303E /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		4F57149686F01C3689BD4E9C5E0AA33B /* BMCommonUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMCommonUI.h; path = BMCommonUI/Classes/BMCommonUI.h; sourceTree = "<group>"; };
-		53B713D68C4509DBA9D0E09B576E1715 /* BMCommonUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCommonUI.debug.xcconfig; sourceTree = "<group>"; };
-		676004D547C63DA8FFA2FA9BF5DBD52A /* BMCommonUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BMCommonUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		44904D2E5364A1DAD61623BC7EE21734 /* BMCLoginWelcomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginWelcomeView.swift; sourceTree = "<group>"; };
+		476198032932650F5263D1135270DD22 /* BMCCircleProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCCircleProgressView.swift; sourceTree = "<group>"; };
+		4D67522C17FA34ED3CA7A9A45C4E3476 /* BMCCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCCalendar.swift; sourceTree = "<group>"; };
+		4EDA9BFBBFC8A453AB3B01F2CE8118F8 /* BMCommonUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BMCommonUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		543DD7A36A730918B75E138E729F4377 /* BMCQuizIntroView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCQuizIntroView.swift; sourceTree = "<group>"; };
+		5732CC0B49EEDCC038693038038041D6 /* BMCExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCExtensions.swift; sourceTree = "<group>"; };
+		5E74D1C81208BD495E8EB74438689C10 /* BMCBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCBundle.swift; sourceTree = "<group>"; };
+		6094E96399B2F516E831C683FA71B60E /* BMCMainTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMainTab.swift; sourceTree = "<group>"; };
+		67068850088AB79C68318B99D7D57328 /* BMCLoginBirthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginBirthView.swift; sourceTree = "<group>"; };
 		69FDC6B07E70BA7B5C888804822FA0C6 /* Pods-BMCommonUI-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMCommonUI-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6A65AC4FEC4194CBD1E630673989F0C1 /* BMCMeChangePasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeChangePasswordView.swift; sourceTree = "<group>"; };
-		6CB79FEEB0624CA9D254CB242C4459B4 /* BMCommonUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-prefix.pch"; sourceTree = "<group>"; };
+		713DA3B31B65A831974592B3225AC349 /* BMCommonUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCommonUI.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74964B99AA84136A591FD4F72F3B2E48 /* Pods-BMCommonUI-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BMCommonUI-Example-umbrella.h"; sourceTree = "<group>"; };
-		77622E6C04C9610258ED76E02E6D96CB /* BMCPageListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageListView.swift; sourceTree = "<group>"; };
-		7B1D0783E3A541EAD4BED5E320C44477 /* BMCLoginChooseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginChooseView.swift; sourceTree = "<group>"; };
-		815836E7F2708338DD05CC6D1E95C17A /* BMCMeAboutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeAboutView.swift; sourceTree = "<group>"; };
 		885D4639846AD0C7342C7BCB603A4626 /* BMCommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMCommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95E5F590C5332BB8C9879DE3CB2A5E64 /* BMCommonUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BMCommonUI.modulemap; sourceTree = "<group>"; };
-		96BA9CE03A01155DAC4D8BF95D4AA2A4 /* BMCUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCUI.swift; sourceTree = "<group>"; };
+		8C8F5510FD6BE6316B5B405F91747EF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8EE16CE723964F37DFC85B680E6E76FA /* BMCAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCAlertView.swift; sourceTree = "<group>"; };
+		90A9058BB4C903F880A647AFED6521DF /* BMCUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCUI.swift; sourceTree = "<group>"; };
+		93E9783E01819DB365921C5FB20C5AC9 /* BMCPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageControl.swift; sourceTree = "<group>"; };
 		976207C4F2E81576FFAD3F107C44E10A /* Pods-BMCommonUI-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BMCommonUI-Example-dummy.m"; sourceTree = "<group>"; };
-		985E20894BD25E6300BF6E85F660A2A1 /* BMCBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCBundle.swift; sourceTree = "<group>"; };
 		9C188F47F396CB09200D8B493FC6D8F0 /* Pods-BMCommonUI-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMCommonUI-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1EAEE84D36C1F3C7E5D128AE3663986 /* BMCommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-umbrella.h"; sourceTree = "<group>"; };
+		A40936DEC1C03693B56E4505FF595BF0 /* BMCWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCWrapper.swift; sourceTree = "<group>"; };
+		A5026CF170B056BBDD1CC43298DDB496 /* BMCommonUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-prefix.pch"; sourceTree = "<group>"; };
 		A68742D9BCCA199F58078240F6737B6A /* Pods-BMCommonUI-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMCommonUI-Example.release.xcconfig"; sourceTree = "<group>"; };
-		AC166DCFC6F30143721232C761297F8C /* BMCMeReminderDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeReminderDetailView.swift; sourceTree = "<group>"; };
-		B8370B596FB81D058BAF949699126A45 /* BMCommonUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMCommonUI-dummy.m"; sourceTree = "<group>"; };
-		B8ABAF0B17F4648713A09CF56253A8CF /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B9D78DDF09954E4BC77DF2F34B13E8A9 /* BMCAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCAlertView.swift; sourceTree = "<group>"; };
-		CEA8DF0F603823211EDD69AF9518FF66 /* BMCLoginWelcomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginWelcomeView.swift; sourceTree = "<group>"; };
-		D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCCircleProgressView.swift; sourceTree = "<group>"; };
-		D8CE8DD35C36073F431FB9574F7C2194 /* BMCWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCWrapper.swift; sourceTree = "<group>"; };
+		B991456C2CF53F6762CD2DA33106A246 /* BMCLoginChooseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCLoginChooseView.swift; sourceTree = "<group>"; };
+		BE8CA3D6770D9AD32BA64631D71A37FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C82E2DD408BAE72177CFD7588AF2A792 /* BMCMeReminderSettingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeReminderSettingView.swift; sourceTree = "<group>"; };
+		C9102816C96E2DEB1CA60BE0EDD10C78 /* BMCommonUI.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = BMCommonUI.xcassets; path = BMCommonUI/Assets/BMCommonUI.xcassets; sourceTree = "<group>"; };
+		CADD02E204AB89D5D69D31F992E5276B /* BMCSubScriptionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCSubScriptionView.swift; sourceTree = "<group>"; };
+		CBEE93D7A1F2337CCCF7DA2B4FB4B261 /* BMCMeMainView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeMainView.swift; sourceTree = "<group>"; };
+		CE7805A6A245670A96CD47822C7608CA /* BMCommonUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMCommonUI-Info.plist"; sourceTree = "<group>"; };
+		D3E3FF6B5F255C2CE8CC35D96C30BCF4 /* BMCPageListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageListView.swift; sourceTree = "<group>"; };
+		D803D30170E2CF09A20FADA79D69F63D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1C794018DACD1524C737C8FA9C9113A /* Pods-BMCommonUI-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMCommonUI-Example.modulemap"; sourceTree = "<group>"; };
-		E88A68A7127DB048CA17CFD187A06DC5 /* BMCCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCCalendar.swift; sourceTree = "<group>"; };
-		EFEAE66841378C8B7EE6B2C435515349 /* BMCommonUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMCommonUI-Info.plist"; sourceTree = "<group>"; };
-		F574B9B2EF6CE1E7B5246D56A702E3C1 /* BMCQuizIntroView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCQuizIntroView.swift; sourceTree = "<group>"; };
-		F663DBF11543B6D7F946CA5D54F11D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FD443E7E863C2903D01BB668C923B502 /* BMCDialogueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCDialogueView.swift; sourceTree = "<group>"; };
-		FEA518FD555743009183120AEF7E18F7 /* BMCMeMainView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCMeMainView.swift; sourceTree = "<group>"; };
+		EA4B8323144CFCA46A98FF128CD717BF /* BMCommonUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMCommonUI.debug.xcconfig; sourceTree = "<group>"; };
+		F96A47F0EA6D3DAE37ED6828CD8E6E87 /* BMCommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C16EDADFEAC59DE5430F46807BB550E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB5D88F5CC4E0207AC7A38B094916340 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C86C85FC0B134D39C5CD5DABC5848910 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,9 +112,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF37A2491CB008FB28ADFD3FEA1E6826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AE390BE55ED52FB45C3046710C4BFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06246214C6E2D2727DADD4EB44F8C54F /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				CADD02E204AB89D5D69D31F992E5276B /* BMCSubScriptionView.swift */,
+			);
+			name = Subscription;
+			path = BMCommonUI/Classes/Subscription;
+			sourceTree = "<group>";
+		};
+		07F52566AEE1F8BC4FAB09A17EED7086 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6094E96399B2F516E831C683FA71B60E /* BMCMainTab.swift */,
+			);
+			name = Main;
+			path = BMCommonUI/Classes/Main;
+			sourceTree = "<group>";
+		};
 		0A019DD8AD133CA1DBCB5967B3397EA9 /* Pods-BMCommonUI-Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,101 +158,24 @@
 			path = "Target Support Files/Pods-BMCommonUI-Example";
 			sourceTree = "<group>";
 		};
-		11DF6177A686A9D8393AA56420DA2426 /* Development Pods */ = {
+		340658E393E27371ADE93A23110DDDAE /* BMCommonUI */ = {
 			isa = PBXGroup;
 			children = (
-				2EF49F1669EF3ABEEDF575E3B62B5510 /* BMCommonUI */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1D1A32E021579E5CBB16FD9922669C23 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				95E5F590C5332BB8C9879DE3CB2A5E64 /* BMCommonUI.modulemap */,
-				B8370B596FB81D058BAF949699126A45 /* BMCommonUI-dummy.m */,
-				EFEAE66841378C8B7EE6B2C435515349 /* BMCommonUI-Info.plist */,
-				6CB79FEEB0624CA9D254CB242C4459B4 /* BMCommonUI-prefix.pch */,
-				A1EAEE84D36C1F3C7E5D128AE3663986 /* BMCommonUI-umbrella.h */,
-				53B713D68C4509DBA9D0E09B576E1715 /* BMCommonUI.debug.xcconfig */,
-				1C70301AD3D332AF1C1A24F891EE9E89 /* BMCommonUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BMCommonUI";
-			sourceTree = "<group>";
-		};
-		2A3D0E0CE91D9E2EB09132C77BC4223B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B9D78DDF09954E4BC77DF2F34B13E8A9 /* BMCAlertView.swift */,
-				E88A68A7127DB048CA17CFD187A06DC5 /* BMCCalendar.swift */,
-				FD443E7E863C2903D01BB668C923B502 /* BMCDialogueView.swift */,
-				44632F1652708029A59076935F112065 /* BMCPageControl.swift */,
-				77622E6C04C9610258ED76E02E6D96CB /* BMCPageListView.swift */,
-				E60B5D872E0D5C9BDA83F652B5BAFACF /* Localizable.strings */,
-				D385163A2AA5E22C0001C3EB /* BMCCircleProgressView.swift */,
-			);
-			name = Base;
-			path = BMCommonUI/Classes/Base;
-			sourceTree = "<group>";
-		};
-		2EF49F1669EF3ABEEDF575E3B62B5510 /* BMCommonUI */ = {
-			isa = PBXGroup;
-			children = (
-				4F57149686F01C3689BD4E9C5E0AA33B /* BMCommonUI.h */,
-				2A3D0E0CE91D9E2EB09132C77BC4223B /* Base */,
-				DCF12985B62CE791BF18FEDAE3E2578F /* Login */,
-				92CCE45A0EC1C7C940C634FE7DF0FF62 /* Main */,
-				3E8CCBE926CC8A20A66535ECA3CBBBF1 /* Me */,
-				3579A57D4EC92BF97FE5F97BAE602EAD /* Model */,
-				78EEF081E16169020F90D76236BDE434 /* Pod */,
-				38911577CD0B4CD0564F2CE8A217F6C7 /* Quiz */,
-				55EAC04649B9345C12F80C5BE9C6BB58 /* Subscription */,
-				1D1A32E021579E5CBB16FD9922669C23 /* Support Files */,
-				BECAA34A6E81B855C9969778EAC62FDF /* Utils */,
+				1C8832DAF332D9BE9401D8FDBE11B8F1 /* BMCommonUI.h */,
+				C9102816C96E2DEB1CA60BE0EDD10C78 /* BMCommonUI.xcassets */,
+				E85B19FD88567AE394768BA135BFDECA /* Base */,
+				58D48936910C88B02271C1D50B7A74F3 /* Login */,
+				07F52566AEE1F8BC4FAB09A17EED7086 /* Main */,
+				5CA2D74FD3A5EB37C012551D95C2CC2F /* Me */,
+				F89121FE43400B8456B31EF5E6217E53 /* Model */,
+				E3AAD9EDDF7CAC12715AACFF2699A63F /* Pod */,
+				DDC15892B75C6B6288B78A3740A743EA /* Quiz */,
+				06246214C6E2D2727DADD4EB44F8C54F /* Subscription */,
+				B68B55FE96A602A82AD972BCF018EF61 /* Support Files */,
+				FCAE895857492C39408D8B3874028D2A /* Utils */,
 			);
 			name = BMCommonUI;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		3579A57D4EC92BF97FE5F97BAE602EAD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				20CEFA4E21B5AF10D719D135E97870E4 /* BMCExtensions.swift */,
-			);
-			name = Model;
-			path = BMCommonUI/Classes/Model;
-			sourceTree = "<group>";
-		};
-		38911577CD0B4CD0564F2CE8A217F6C7 /* Quiz */ = {
-			isa = PBXGroup;
-			children = (
-				F574B9B2EF6CE1E7B5246D56A702E3C1 /* BMCQuizIntroView.swift */,
-			);
-			name = Quiz;
-			path = BMCommonUI/Classes/Quiz;
-			sourceTree = "<group>";
-		};
-		3E8CCBE926CC8A20A66535ECA3CBBBF1 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				815836E7F2708338DD05CC6D1E95C17A /* BMCMeAboutView.swift */,
-				6A65AC4FEC4194CBD1E630673989F0C1 /* BMCMeChangePasswordView.swift */,
-				FEA518FD555743009183120AEF7E18F7 /* BMCMeMainView.swift */,
-				AC166DCFC6F30143721232C761297F8C /* BMCMeReminderDetailView.swift */,
-				1534E91C5635337007F47AADF8F9C99B /* BMCMeReminderSettingView.swift */,
-			);
-			name = Me;
-			path = BMCommonUI/Classes/Me;
-			sourceTree = "<group>";
-		};
-		55EAC04649B9345C12F80C5BE9C6BB58 /* Subscription */ = {
-			isa = PBXGroup;
-			children = (
-				0F23854BD689270F54B0BF3CD152517F /* BMCSubScriptionView.swift */,
-			);
-			name = Subscription;
-			path = BMCommonUI/Classes/Subscription;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -243,14 +186,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		78EEF081E16169020F90D76236BDE434 /* Pod */ = {
+		58D48936910C88B02271C1D50B7A74F3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				676004D547C63DA8FFA2FA9BF5DBD52A /* BMCommonUI.podspec */,
-				F663DBF11543B6D7F946CA5D54F11D30 /* LICENSE */,
-				32D380DBD74573259E7C9E57E6C0970D /* README.md */,
+				67068850088AB79C68318B99D7D57328 /* BMCLoginBirthView.swift */,
+				B991456C2CF53F6762CD2DA33106A246 /* BMCLoginChooseView.swift */,
+				0A8F5CCCBF46EEDF54963D23777387F2 /* BMCLoginFakeProgressView.swift */,
+				44904D2E5364A1DAD61623BC7EE21734 /* BMCLoginWelcomeView.swift */,
 			);
-			name = Pod;
+			name = Login;
+			path = BMCommonUI/Classes/Login;
+			sourceTree = "<group>";
+		};
+		5CA2D74FD3A5EB37C012551D95C2CC2F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				02F027D4B88CDF637A6830B1397EF575 /* BMCMeAboutView.swift */,
+				37057E622D541E1828E015D84480ED59 /* BMCMeChangePasswordView.swift */,
+				CBEE93D7A1F2337CCCF7DA2B4FB4B261 /* BMCMeMainView.swift */,
+				02D78049563A308496E4D1F368337565 /* BMCMeReminderDetailView.swift */,
+				C82E2DD408BAE72177CFD7588AF2A792 /* BMCMeReminderSettingView.swift */,
+			);
+			name = Me;
+			path = BMCommonUI/Classes/Me;
 			sourceTree = "<group>";
 		};
 		790326EF609B5B10E35A93016757CC53 /* Targets Support Files */ = {
@@ -261,31 +219,34 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		92CCE45A0EC1C7C940C634FE7DF0FF62 /* Main */ = {
+		B06BD9C0E35F6FE6CBE80AF1BECEB71B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1D212F3770D96C7639FD43A5FB7FA4D5 /* BMCMainTab.swift */,
+				340658E393E27371ADE93A23110DDDAE /* BMCommonUI */,
 			);
-			name = Main;
-			path = BMCommonUI/Classes/Main;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BECAA34A6E81B855C9969778EAC62FDF /* Utils */ = {
+		B68B55FE96A602A82AD972BCF018EF61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				985E20894BD25E6300BF6E85F660A2A1 /* BMCBundle.swift */,
-				96BA9CE03A01155DAC4D8BF95D4AA2A4 /* BMCUI.swift */,
-				D8CE8DD35C36073F431FB9574F7C2194 /* BMCWrapper.swift */,
+				35038D779ACE038340317AA4DD371F83 /* BMCommonUI.modulemap */,
+				033C7CFCC2E4928717F3A0239148966C /* BMCommonUI-dummy.m */,
+				CE7805A6A245670A96CD47822C7608CA /* BMCommonUI-Info.plist */,
+				A5026CF170B056BBDD1CC43298DDB496 /* BMCommonUI-prefix.pch */,
+				F96A47F0EA6D3DAE37ED6828CD8E6E87 /* BMCommonUI-umbrella.h */,
+				EA4B8323144CFCA46A98FF128CD717BF /* BMCommonUI.debug.xcconfig */,
+				713DA3B31B65A831974592B3225AC349 /* BMCommonUI.release.xcconfig */,
 			);
-			name = Utils;
-			path = BMCommonUI/Classes/Utils;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BMCommonUI";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				11DF6177A686A9D8393AA56420DA2426 /* Development Pods */,
+				B06BD9C0E35F6FE6CBE80AF1BECEB71B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D5E3F253B9AB95C1A341F71098412BCC /* Products */,
 				790326EF609B5B10E35A93016757CC53 /* Targets Support Files */,
@@ -309,16 +270,58 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCF12985B62CE791BF18FEDAE3E2578F /* Login */ = {
+		DDC15892B75C6B6288B78A3740A743EA /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				3C1E4553D69D91A08B9FCB55D3574A99 /* BMCLoginBirthView.swift */,
-				7B1D0783E3A541EAD4BED5E320C44477 /* BMCLoginChooseView.swift */,
-				2BC88C6055DAB4979A5B60D4BB9B366E /* BMCLoginProgressView.swift */,
-				CEA8DF0F603823211EDD69AF9518FF66 /* BMCLoginWelcomeView.swift */,
+				543DD7A36A730918B75E138E729F4377 /* BMCQuizIntroView.swift */,
 			);
-			name = Login;
-			path = BMCommonUI/Classes/Login;
+			name = Quiz;
+			path = BMCommonUI/Classes/Quiz;
+			sourceTree = "<group>";
+		};
+		E3AAD9EDDF7CAC12715AACFF2699A63F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA9BFBBFC8A453AB3B01F2CE8118F8 /* BMCommonUI.podspec */,
+				BE8CA3D6770D9AD32BA64631D71A37FD /* LICENSE */,
+				8C8F5510FD6BE6316B5B405F91747EF6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E85B19FD88567AE394768BA135BFDECA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8EE16CE723964F37DFC85B680E6E76FA /* BMCAlertView.swift */,
+				4D67522C17FA34ED3CA7A9A45C4E3476 /* BMCCalendar.swift */,
+				476198032932650F5263D1135270DD22 /* BMCCircleProgressView.swift */,
+				34930552688BC41C41004BEB627BE276 /* BMCDialogueView.swift */,
+				93E9783E01819DB365921C5FB20C5AC9 /* BMCPageControl.swift */,
+				D3E3FF6B5F255C2CE8CC35D96C30BCF4 /* BMCPageListView.swift */,
+				6E188246204ED62F4B0AFE02B654658E /* Localizable.strings */,
+			);
+			name = Base;
+			path = BMCommonUI/Classes/Base;
+			sourceTree = "<group>";
+		};
+		F89121FE43400B8456B31EF5E6217E53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5732CC0B49EEDCC038693038038041D6 /* BMCExtensions.swift */,
+			);
+			name = Model;
+			path = BMCommonUI/Classes/Model;
+			sourceTree = "<group>";
+		};
+		FCAE895857492C39408D8B3874028D2A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E74D1C81208BD495E8EB74438689C10 /* BMCBundle.swift */,
+				90A9058BB4C903F880A647AFED6521DF /* BMCUI.swift */,
+				A40936DEC1C03693B56E4505FF595BF0 /* BMCWrapper.swift */,
+			);
+			name = Utils;
+			path = BMCommonUI/Classes/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,12 +335,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8835A29E935ABB264A2780A4FEC3230 /* Headers */ = {
+		EFAF9703E406601A82ABC95FD812DCED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D135C6761DCAA255AECB24B048CF4049 /* BMCommonUI.h in Headers */,
-				68079C7232D1C4600C69C7D99D133851 /* BMCommonUI-umbrella.h in Headers */,
+				99A72FF07AA7CFDC609EF4B128BCDB58 /* BMCommonUI.h in Headers */,
+				96218E5FBE0F5CE4E9F032A9EB29DF41 /* BMCommonUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +359,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B8FAC5EBA2AB03E94F22EA71C6C64C25 /* PBXTargetDependency */,
+				90A3D7569305C6470855275BDB3D9044 /* PBXTargetDependency */,
 			);
 			name = "Pods-BMCommonUI-Example";
 			productName = Pods_BMCommonUI_Example;
@@ -365,12 +368,12 @@
 		};
 		FC0B9369CC4621BE270AF134A4E9B0D6 /* BMCommonUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F943378AC4C8F15AE5899B932E194F31 /* Build configuration list for PBXNativeTarget "BMCommonUI" */;
+			buildConfigurationList = 56D0C4A6B57FCE09138803C8734B6B6E /* Build configuration list for PBXNativeTarget "BMCommonUI" */;
 			buildPhases = (
-				E8835A29E935ABB264A2780A4FEC3230 /* Headers */,
-				584E8F3D5575765128D82F31DB6DBF0E /* Sources */,
-				2C16EDADFEAC59DE5430F46807BB550E /* Frameworks */,
-				67BDE8C273540A00E7CE51AB635997D3 /* Resources */,
+				EFAF9703E406601A82ABC95FD812DCED /* Headers */,
+				350C4E25AF5579C6428373AEE122966F /* Sources */,
+				CF37A2491CB008FB28ADFD3FEA1E6826 /* Frameworks */,
+				5401AEC86B98D70C135339EFC400F27D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -411,10 +414,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		67BDE8C273540A00E7CE51AB635997D3 /* Resources */ = {
+		5401AEC86B98D70C135339EFC400F27D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AE304691BB26552AE30CB38E7C0DDF /* BMCommonUI.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,55 +440,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		584E8F3D5575765128D82F31DB6DBF0E /* Sources */ = {
+		350C4E25AF5579C6428373AEE122966F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F28EB2E62BAD3B26CE0BEA8FF4DDD6 /* BMCAlertView.swift in Sources */,
-				77D39AA0C75FEDB8F89F860BAE62E2BE /* BMCBundle.swift in Sources */,
-				D935A20E8690EBCB67A2A2DDCF4E3DC2 /* BMCCalendar.swift in Sources */,
-				91340D54DAA486A0D98ACC77312C6B61 /* BMCDialogueView.swift in Sources */,
-				C47164C332E2515802160462AECB8503 /* BMCExtensions.swift in Sources */,
-				A1A36FDA7CFA3C9D1D9D52DAB6205EFE /* BMCLoginBirthView.swift in Sources */,
-				E31EE3584DAF15F1FA98B63A60AE3CE4 /* BMCLoginChooseView.swift in Sources */,
-				BB77FF708C71410CB637250194024DD6 /* BMCLoginProgressView.swift in Sources */,
-				C99D86E519E1D7E2C58C736AED4BBF10 /* BMCLoginWelcomeView.swift in Sources */,
-				66E6ED4B7C9153B93BB1EE0639DEF1EA /* BMCMainTab.swift in Sources */,
-				9D882687E327F4A347A439692FEFB6AC /* BMCMeAboutView.swift in Sources */,
-				8D18CA8BDB1C90ED136F19B036DD1F9D /* BMCMeChangePasswordView.swift in Sources */,
-				715902279A532DCDDAAC0FD3F2F20E50 /* BMCMeMainView.swift in Sources */,
-				FDF5E403278FAE4AA5893C29743FE9BC /* BMCMeReminderDetailView.swift in Sources */,
-				F1566EDA98282B36CC4420F16A28DFB4 /* BMCMeReminderSettingView.swift in Sources */,
-				8FDD23CCEBF9352DA71C0D6DF0D92AB4 /* BMCommonUI-dummy.m in Sources */,
-				8C3F213F04A4E5EF4FA58394537C1016 /* BMCPageControl.swift in Sources */,
-				69159AF7DF890F3CF04A630BD80784CD /* BMCPageListView.swift in Sources */,
-				564579587904E751C0A335CBA21D064F /* BMCQuizIntroView.swift in Sources */,
-				850723E6DEF14D382DBEA59F4548C63E /* BMCSubScriptionView.swift in Sources */,
-				56D918DE88BCC0A9929A0ACA7E4F2060 /* BMCUI.swift in Sources */,
-				0BD70CC800B9D2709A61AF8218E37921 /* BMCWrapper.swift in Sources */,
-				332304E9C16E1728423C4DAAC96E85EF /* Localizable.strings in Sources */,
-				21A9BF7A2CD42334E645A6496FDDC47F /* Localizable.strings in Sources */,
-				D385163B2AA5E22C0001C3EB /* BMCCircleProgressView.swift in Sources */,
+				46D9A25D9C822A91FD36FE55C5934735 /* BMCAlertView.swift in Sources */,
+				7ADCF27E1289DFA55FDF6E892A5A348A /* BMCBundle.swift in Sources */,
+				2E43B299249CBC24C1F4474D33320F52 /* BMCCalendar.swift in Sources */,
+				50CB70D46A48C0600DB07DA85A7EF3CE /* BMCCircleProgressView.swift in Sources */,
+				202D0020503859952CF96623E9618338 /* BMCDialogueView.swift in Sources */,
+				D9A7F3CCC177BD4910F60517564BCAAF /* BMCExtensions.swift in Sources */,
+				972088DCB6A0A3AD1B6AA9195E0620A8 /* BMCLoginBirthView.swift in Sources */,
+				53B0E4597682BAE09DD0D3D0CA3F5B9B /* BMCLoginChooseView.swift in Sources */,
+				E4F84D8C1A813B3A7762A9DDD63D948D /* BMCLoginFakeProgressView.swift in Sources */,
+				A842F8DE5FEC9BB195543373987CE7F9 /* BMCLoginWelcomeView.swift in Sources */,
+				C7A1383AD1F4B1E1D2ECEEF9D962FFC1 /* BMCMainTab.swift in Sources */,
+				D42065E7D72B65496BD3DC4EB04DD600 /* BMCMeAboutView.swift in Sources */,
+				472056439567EEF65176EBFA436F8D6D /* BMCMeChangePasswordView.swift in Sources */,
+				02AE1CC6E299F3EC0647FF663BC91F38 /* BMCMeMainView.swift in Sources */,
+				781A84DE0C9366105F5B820C15B170A6 /* BMCMeReminderDetailView.swift in Sources */,
+				74454FD7F9A83CF24A3810C55A60F916 /* BMCMeReminderSettingView.swift in Sources */,
+				5A90712A3EFB30D57E16093E464510D1 /* BMCommonUI-dummy.m in Sources */,
+				5F521E8CF2B2CF52443EB9E7B1C95562 /* BMCPageControl.swift in Sources */,
+				E8149FFFDE33E9AC64ACF702898BEA86 /* BMCPageListView.swift in Sources */,
+				058097C7FCC0C9D788A6D7937A0E21BD /* BMCQuizIntroView.swift in Sources */,
+				17AC126FACE0E829891DBE8474C1A982 /* BMCSubScriptionView.swift in Sources */,
+				0A0DD1DC6030808165F858C2D7FC8F80 /* BMCUI.swift in Sources */,
+				0FF75DA44D590406B35948912E55106F /* BMCWrapper.swift in Sources */,
+				757BFEE5B6F9C7EE115C7E0BBAB532DB /* Localizable.strings in Sources */,
+				42AD499BAD5498CEA668F8F8E6EC54A7 /* Localizable.strings in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B8FAC5EBA2AB03E94F22EA71C6C64C25 /* PBXTargetDependency */ = {
+		90A3D7569305C6470855275BDB3D9044 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMCommonUI;
 			target = FC0B9369CC4621BE270AF134A4E9B0D6 /* BMCommonUI */;
-			targetProxy = AACF2B42C1465FB13DEC40CB0EB2C4F6 /* PBXContainerItemProxy */;
+			targetProxy = D201F390A8328DE132791A7DB29965B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E60B5D872E0D5C9BDA83F652B5BAFACF /* Localizable.strings */ = {
+		6E188246204ED62F4B0AFE02B654658E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8ABAF0B17F4648713A09CF56253A8CF /* Localizable.strings */,
-				4D71E1FA284B047DD9702355D95D303E /* Localizable.strings */,
+				D803D30170E2CF09A20FADA79D69F63D /* Localizable.strings */,
+				0FADF066D4A90D439595E274CD050E14 /* Localizable.strings */,
 			);
 			name = Localizable.strings;
 			path = .;
@@ -556,77 +560,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		532FB19AFCB023711214B984C7CB76C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C70301AD3D332AF1C1A24F891EE9E89 /* BMCommonUI.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BMCommonUI/BMCommonUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMCommonUI/BMCommonUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BMCommonUI/BMCommonUI.modulemap";
-				PRODUCT_MODULE_NAME = BMCommonUI;
-				PRODUCT_NAME = BMCommonUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		82F48ECE9D12FE8BEA12F844299BA658 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53B713D68C4509DBA9D0E09B576E1715 /* BMCommonUI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BMCommonUI/BMCommonUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMCommonUI/BMCommonUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BMCommonUI/BMCommonUI.modulemap";
-				PRODUCT_MODULE_NAME = BMCommonUI;
-				PRODUCT_NAME = BMCommonUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -730,6 +663,77 @@
 			};
 			name = Release;
 		};
+		CCA01F6789AECA658A1EC5EBFA0A868A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4B8323144CFCA46A98FF128CD717BF /* BMCommonUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BMCommonUI/BMCommonUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BMCommonUI/BMCommonUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BMCommonUI/BMCommonUI.modulemap";
+				PRODUCT_MODULE_NAME = BMCommonUI;
+				PRODUCT_NAME = BMCommonUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7953A20B06B11A15104769878348F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713DA3B31B65A831974592B3225AC349 /* BMCommonUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BMCommonUI/BMCommonUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BMCommonUI/BMCommonUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BMCommonUI/BMCommonUI.modulemap";
+				PRODUCT_MODULE_NAME = BMCommonUI;
+				PRODUCT_NAME = BMCommonUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FC5DB3625281E155CB9803F601866E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DB2E2D8CED7E52493E5ABC9C36AFF71 /* Pods-BMCommonUI-Example.debug.xcconfig */;
@@ -788,11 +792,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F943378AC4C8F15AE5899B932E194F31 /* Build configuration list for PBXNativeTarget "BMCommonUI" */ = {
+		56D0C4A6B57FCE09138803C8734B6B6E /* Build configuration list for PBXNativeTarget "BMCommonUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82F48ECE9D12FE8BEA12F844299BA658 /* Debug */,
-				532FB19AFCB023711214B984C7CB76C7 /* Release */,
+				CCA01F6789AECA658A1EC5EBFA0A868A /* Debug */,
+				F7953A20B06B11A15104769878348F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

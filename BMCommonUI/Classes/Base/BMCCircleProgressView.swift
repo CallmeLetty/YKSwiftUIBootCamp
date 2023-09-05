@@ -8,26 +8,44 @@
 import SwiftUI
 
 public enum BMCCircleProgressState {
-  case during, done
+  case during, done, failed
   
-  var desc: String {
+  var buttonText: String {
     switch self {
     case .during: return "Updating"
     case .done:   return "Done"
+    case .failed: return "Try Again"
     }
   }
   
-  var bgColor: Color {
+  var buttonBgColor: Color {
     switch self {
     case .during: return Color(hex: 0xC0C9D4)
-    case .done:   return Color.pink
+    case .done:   return Color(hex: 0xF7599C)
+    case .failed: return Color(hex: 0xF7599C)
+    }
+  }
+  
+  var circleBorderColor: Color {
+    switch self {
+    case .during: return Color(hex: 0xF2F4F8)
+    case .done:   return Color(hex: 0xFF5C5C)
+    case .failed: return Color(hex: 0xFF5C5C).opacity(0.35)
+    }
+  }
+  
+  var circleBgColor: Color {
+    switch self {
+    case .during: return Color(hex: 0xF2F4F8)
+    case .done:   return Color(hex: 0xFF5C5C)
+    case .failed: return Color(hex: 0xFFFBFB)
     }
   }
 }
 
 struct BMCCircleProgressView: View {
   // 0-100
-  @State var progress: Int
+  @State var progress: Float = 0.0
   @State var state: BMCCircleProgressState
   
   let updateInfoList = [
@@ -39,10 +57,19 @@ struct BMCCircleProgressView: View {
     VStack {
       ZStack {
         // circle
-        Circle()
-          .border(Color(hex: 0xF2F4F8), width: 6.5)
-        // Text
-        Text("\(progress)")
+//        Circle()
+//          .stroke(state.circleBorderColor, style: .init(lineWidth: 6.5))
+//          .frame(width: 143.5)
+        
+        if state == .failed {
+          BMCCircleProgressFailView()
+            .frame(width: 143.5)
+        } else {
+          PreogressView(progressValue: $progress)
+              .frame(width: 143.5)
+          // Text
+          Text("\(Int(progress * 100))%")
+        }
       }
       .padding(.top, 114)
       .padding(.bottom, 47)
@@ -55,24 +82,33 @@ struct BMCCircleProgressView: View {
       
       ForEach(0..<updateInfoList.count,id:\.self) { index in
         HStack {
+          Image.BMC("me_about_logo")?
+            .resizable()
+            .scaledToFit()
+            .frame(width: 20, height: 20)
+            .padding(.trailing, 20)
+          
           Text(updateInfoList[index])
             .foregroundColor(Color(hex: 0x8C8D92))
             .font(.system(size: 13))
+            .fontWeight(.medium)
+            .lineSpacing(4)
+            
+          Spacer()
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 30)
       }
-      
       
       Spacer()
       
       Button {
         print("Update done")
       } label: {
-        Text(state.desc)
+        Text(state.buttonText)
           .padding(.vertical, 12.5)
           .padding(.horizontal, 72.5)
-          .background(state.bgColor)
+          .background(state.buttonBgColor)
           .cornerRadius(22.5)
           .foregroundColor(.white)
           .font(.system(size: 14))
@@ -85,6 +121,44 @@ struct BMCCircleProgressView: View {
 
 struct BMCCircleProgressView_Previews: PreviewProvider {
     static var previews: some View {
-      BMCCircleProgressView(progress: 0,state: .during)
+      BMCCircleProgressView(progress: 0,state: .failed)
     }
+}
+
+//进度条view
+struct PreogressView : View {
+  
+  @Binding var progressValue: Float
+  var color: Color = .blue
+  var circleBorderWidth: CGFloat = 6.5
+  
+  var body: some View {
+    ZStack {
+      Circle()
+        .stroke(lineWidth: circleBorderWidth)
+        .opacity(0.2)
+        .foregroundColor(.secondary)
+      
+      Circle()
+        .trim(from: 0.0, to: CGFloat(min(progressValue, 1.0)))
+        .stroke(style: StrokeStyle(lineWidth: circleBorderWidth, lineCap: .round, lineJoin: .round, miterLimit: 0.4))
+        .foregroundColor(color)
+      //旋转使其从顶部开始
+        .rotationEffect(Angle(degrees: 270))
+        .animation(.easeInOut,value: progressValue)
+      
+    }
+  }
+}
+
+struct BMCCircleProgressFailView : View {
+  var body: some View {
+    ZStack {
+      Circle()
+        .stroke(BMCCircleProgressState.failed.circleBorderColor,
+                style: .init(lineWidth: 6.5))
+        .foregroundColor(BMCCircleProgressState.failed.circleBgColor)
+        
+    }
+  }
 }

@@ -8,15 +8,15 @@
 import SwiftUI
 
 public struct BMCDialogueView: View {
-  @State public var isPresented: Bool
+  @Binding public var isPresented: Bool
   @State public var title: String
   
   public let insideView: AnyView
   
-  public init(isPresented: Bool,
+  public init(isPresented: Binding<Bool>,
               title: String,
               insideView: AnyView) {
-    self.isPresented = isPresented
+    _isPresented = isPresented
     self.title = title
     self.insideView = insideView
   }
@@ -59,14 +59,14 @@ public struct BMCDialogueView: View {
 }
 
 struct BMCDialogueViewDemo: View {
-  @State var show = true
+  @State var show = false
   
   var body: some View {
     Button("Show Dialogue") {
       show.toggle()
     }
     .sheet(isPresented: $show) {
-      BMCDialogueView(isPresented: show,
+      BMCDialogueView(isPresented: $show,
                       title: "Detail",
                       insideView: AnyView(BMCMeReminderDetailView(title: "",
                                                                   detail: "",
