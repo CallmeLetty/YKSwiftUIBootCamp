@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private enum BMCCircleProgressState {
+public enum BMCCircleProgressState {
   case during, done
   
   var desc: String {
@@ -39,9 +39,12 @@ struct BMCCircleProgressView: View {
     VStack {
       ZStack {
         // circle
+        Circle()
+          .border(Color(hex: 0xF2F4F8), width: 6.5)
         // Text
         Text("\(progress)")
       }
+      .padding(.top, 114)
       .padding(.bottom, 47)
       
       Text("New updates in this version:")
@@ -67,7 +70,14 @@ struct BMCCircleProgressView: View {
         print("Update done")
       } label: {
         Text(state.desc)
+          .padding(.vertical, 12.5)
+          .padding(.horizontal, 72.5)
+          .background(state.bgColor)
+          .cornerRadius(22.5)
+          .foregroundColor(.white)
+          .font(.system(size: 14))
       }
+      .padding(.bottom, 25)
 
     }
   }
