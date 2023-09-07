@@ -1,15 +1,22 @@
 PODS:
-  - BMCommonUI (0.0.1)
+  - BMCommonUI (0.0.1):
+    - lottie-ios
+  - lottie-ios (4.2.0)
 
 DEPENDENCIES:
   - BMCommonUI (from `..`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
 
 EXTERNAL SOURCES:
   BMCommonUI:
     :path: ".."
 
 SPEC CHECKSUMS:
-  BMCommonUI: 390706c312e516258842c642e9f1f3087edb63d7
+  BMCommonUI: ccd93f08270491e65c54547bc9836db0553bbd4f
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
 
 PODFILE CHECKSUM: dcb9b1c8591d96d9c1a975f734cf01e832ecca14
 

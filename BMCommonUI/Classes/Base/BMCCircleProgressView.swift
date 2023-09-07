@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 public enum BMCCircleProgressState {
   case during, done, failed

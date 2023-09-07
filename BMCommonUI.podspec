@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "liuyuanyuan" => "1085798092@qq.com" }
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '14.0'
 
   spec.source       = { :git => "git@git.bongmi.cn:bongmi/BMCommonUI.podspec.git", :tag => "#{spec.version}" }
 
