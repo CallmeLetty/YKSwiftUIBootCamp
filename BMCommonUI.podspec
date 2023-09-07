@@ -18,8 +18,10 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "#{spec.name}/Classes/**/*"
   spec.requires_arc = true
-  spec.resources  = "#{spec.name}/Assets/**/*",'#{spec.name}/Base/*.strings'
-  # spec.resources = "Resources/*.png"
+
+  spec.resources = "#{spec.name}/Assets/*.xcassets",
+                   "#{spec.name}/Assets/*.bundle",
+                   '#{spec.name}/Assets/*.strings'
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
@@ -37,6 +39,5 @@ Pod::Spec.new do |spec|
   # 
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   spec.dependency "lottie-ios"
 
 end

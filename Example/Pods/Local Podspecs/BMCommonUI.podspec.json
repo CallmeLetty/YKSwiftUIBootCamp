@@ -21,12 +21,8 @@
   "source_files": "BMCommonUI/Classes/**/*",
   "requires_arc": true,
   "resources": [
-    "BMCommonUI/Assets/**/*",
-    "#{spec.name}/Base/*.strings"
-  ],
-  "dependencies": {
-    "lottie-ios": [
-
-    ]
-  }
+    "BMCommonUI/Assets/*.xcassets",
+    "BMCommonUI/Assets/*.bundle",
+    "#{spec.name}/Assets/*.strings"
+  ]
 }

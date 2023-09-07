@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Lottie
 
 public enum BMCCircleProgressState {
   case during, done, failed
@@ -82,22 +81,24 @@ struct BMCCircleProgressView: View {
         .padding(.bottom, 20)
       
       ForEach(0..<updateInfoList.count,id:\.self) { index in
-        HStack {
+        HStack(alignment: .center) {
+          
           Image.BMC("me_about_logo")?
             .resizable()
             .scaledToFit()
-            .frame(width: 20, height: 20)
-            .padding(.trailing, 20)
+            .frame(width: 30, height: 30)
+            .padding(.leading, 36)
+            .padding(.trailing, 16)
           
           Text(updateInfoList[index])
             .foregroundColor(Color(hex: 0x8C8D92))
             .font(.system(size: 13))
             .fontWeight(.medium)
             .lineSpacing(4)
+            .padding(.trailing, 20)
             
           Spacer()
         }
-        .padding(.horizontal, 16)
         .padding(.bottom, 30)
       }
       
@@ -122,7 +123,7 @@ struct BMCCircleProgressView: View {
 
 struct BMCCircleProgressView_Previews: PreviewProvider {
     static var previews: some View {
-      BMCCircleProgressView(progress: 0,state: .failed)
+      BMCCircleProgressView(progress: 1,state: .done)
     }
 }
 
@@ -130,7 +131,7 @@ struct BMCCircleProgressView_Previews: PreviewProvider {
 struct PreogressView : View {
   
   @Binding var progressValue: Float
-  var color: Color = .blue
+  var color: Color = BMCCircleProgressState.done.buttonBgColor
   var circleBorderWidth: CGFloat = 6.5
   
   var body: some View {
@@ -147,7 +148,9 @@ struct PreogressView : View {
       //旋转使其从顶部开始
         .rotationEffect(Angle(degrees: 270))
         .animation(.easeInOut,value: progressValue)
-      
+        .onAppear {
+          
+        }
     }
   }
 }
