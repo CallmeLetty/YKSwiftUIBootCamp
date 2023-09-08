@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CFA81F7FAB5B440AE359D9030568D4E /* BMCommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CB65D84791CD69D69D555649AB771D7 /* BMCommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1535C3412AAA96CD00C2BD5A /* BMCNetFailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535C3402AAA96CD00C2BD5A /* BMCNetFailView.swift */; };
+		1535C3432AAA9BBA00C2BD5A /* BMCMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535C3422AAA9BBA00C2BD5A /* BMCMaskView.swift */; };
 		183998ED6815D7F9E90802C998127E91 /* BMCLoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C896F34316C7EF23E76251BD0C265D /* BMCLoginWelcomeView.swift */; };
 		1D014EFA060E1A5A3C4FEE782ABA4B47 /* BMCMeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A8283DE3D649192DDFE58F79B59F9 /* BMCMeAboutView.swift */; };
 		242E389562A2E2B049D1D5DC6B4D0FB2 /* BMCommonUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05ADBD0F7F34A2B0527638E7588CB6F /* BMCommonUI-dummy.m */; };
@@ -55,6 +56,7 @@
 		08959A84FB895C6F67B1B46447B419FE /* BMCPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCPageControl.swift; sourceTree = "<group>"; };
 		0CB65D84791CD69D69D555649AB771D7 /* BMCommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMCommonUI-umbrella.h"; sourceTree = "<group>"; };
 		1535C3402AAA96CD00C2BD5A /* BMCNetFailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCNetFailView.swift; sourceTree = "<group>"; };
+		1535C3422AAA9BBA00C2BD5A /* BMCMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCMaskView.swift; sourceTree = "<group>"; };
 		159C8458B243D56EBC75CE0970C36C9A /* Pods-BMCommonUI-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMCommonUI-Example-Info.plist"; sourceTree = "<group>"; };
 		15C5044311B6D2530574EC445582CFD6 /* BMCommonUI.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = BMCommonUI.xcassets; path = BMCommonUI/Assets/BMCommonUI.xcassets; sourceTree = "<group>"; };
 		15F79B9D2FFAE8AF1E81F2E12D40F44B /* Pods-BMCommonUI-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMCommonUI-Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				08959A84FB895C6F67B1B46447B419FE /* BMCPageControl.swift */,
 				4ED39A5DFB993337188A9597EEE79668 /* BMCPageListView.swift */,
 				1535C3402AAA96CD00C2BD5A /* BMCNetFailView.swift */,
+				1535C3422AAA9BBA00C2BD5A /* BMCMaskView.swift */,
 			);
 			name = Base;
 			path = BMCommonUI/Classes/Base;
@@ -436,6 +439,7 @@
 				30FE03381860BB684E75FC5C83249948 /* BMCAlertView.swift in Sources */,
 				986BED6EFACDE123B87FED41F514DC87 /* BMCBundle.swift in Sources */,
 				995FEFCE9CF9B980AF80907FCCADAA5C /* BMCCalendar.swift in Sources */,
+				1535C3432AAA9BBA00C2BD5A /* BMCMaskView.swift in Sources */,
 				1535C3412AAA96CD00C2BD5A /* BMCNetFailView.swift in Sources */,
 				B71E67E86275053B8FA85832EFB4E017 /* BMCCircleProgressView.swift in Sources */,
 				56B2AA95C411E01CA6B8D51C679C5329 /* BMCDialogueView.swift in Sources */,
